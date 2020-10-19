@@ -4,7 +4,7 @@ FriApk
 
 
 # 参考
-- [androguard])(https://github.com/androguard/androguard)
+- [androguard](https://github.com/androguard/androguard)
 - [apkscanner](https://github.com/gremwell/apkscanner)
 - [AndroidChecklist](https://github.com/guanchao/AndroidChecklist)
 - ...
