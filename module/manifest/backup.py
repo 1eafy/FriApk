@@ -1,17 +1,19 @@
-from libs.androguard.core.bytecodes import apk as aaa
-from libs.androguard.core.bytecodes.dvm import *
-from asn1crypto import x509, keys
+# from libs.androguard.core.bytecodes import apk as aaa
+# from libs.androguard.core.bytecodes.dvm import *
+# from asn1crypto import x509, keys
+from common.Vulnerability import *
+from common.PrintUtils import *
 
 class Module:
     def __init__(self, apk):
         self.apk = apk
         self.module_info = {
-            "Name": "",
-            "Author": "",
-            "Date": "",
-            "Description": "",
+            "Name": "应用备份",
+            "Author": "xxx",
+            "Date": "2020.10.20",
+            "Description": "Check Application allow backup",
             "Reference": [
-                "",
+                "https://segmentfault.com/a/1190000002590577",
             ],
         }
 
@@ -53,9 +55,30 @@ class Module:
             #     print(k, v)
 
     def run(self):
+
+        allow_backup = self.apk.get_attribute_value("application", "allowBackup")
+        # allow_debug = self.apk.get_attribute_value("application", "debuggable")
+
+        level = INFO
+        content = f"\t{allow_backup}"
+        poc = None
+        suggestion = None
+
+        if allow_backup.lower() == "true":
+            level = HIGH
+            suggestion = f"\t{RED}设置AndroidManifest.xml的allowBackup标志为false{END}"
+
+        vuln = Vulnerable(name=self.module_info['Name'],
+                          level=level,
+                          content=content,
+                          poc=poc,
+                          suggestion=suggestion,
+                          )
+        self.status = True
+
         return {
             "status": self.status,
-            'result': None
+            'result': vuln
         }
         # print("Check backup")
 

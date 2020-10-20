@@ -1,9 +1,8 @@
 import os
 import zipfile
 from re import search
-from base.PrintUtils import *
+from common.PrintUtils import *
 from common.Utils import *
-from libs.androguard.core.bytecodes import *
 
 from base.protect import *
 from config.config import *

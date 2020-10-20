@@ -1,13 +1,9 @@
 from re import search, findall
-from base.PrintUtils import *
-from common.Utils import *
+from common.PrintUtils import *
 from libs.androguard.core.bytecodes import apk
 from libs.androguard.core.androconf import *
 from importlib import util, import_module
 from base.protect import *
-from config.config import *
-from xml.etree import ElementTree as ET
-import importlib
 
 
 class FriApk:
@@ -61,8 +57,12 @@ class FriApk:
                             self.vuln_obj.append(module_res)
                             printGreen(f'[*] {module_res.name}')
                             print(f'{module_res.content}')
+                            if module_res.poc:
+                                print(module_res.poc)
+                            if module_res.suggestion:
+                                print(module_res.suggestion)
                     except Exception as e:
-                        print(f"[!] Load {m} Error.", e)
+                        print(f" [!] Load {m} Error.", e)
                     self.modules_load.append(m)
 
     def check_module(self, module):
