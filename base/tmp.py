@@ -21,7 +21,9 @@ def check_module(module):
     return module_spec
 
 
-for root, _, files in list(os.walk("../module"))[1:-2]:
+for root, _, files in list(os.walk("../module"))[1:]:
+    print(root)
+    print(files)
     module_type = re.findall(r"module\\(.*)", root)[0]
     if len(files):
         modules[module_type] = ['.'.join(['module', module_type, m[:-3]]) for m in files if m.endswith('py')]

@@ -43,7 +43,7 @@ class FriApk:
             printRed("[!] File is not APK.")
 
     def load_modules(self):
-        for root, _, files in list(os.walk("module"))[1:-2]:
+        for root, _, files in list(os.walk("module"))[1:]:
             module_type = findall(r"module\\(.*)", root)[0]
             if len(files):
                 self.modules[module_type] = ['.'.join(['module', module_type, m[:-3]]) for m in files if
@@ -51,13 +51,19 @@ class FriApk:
         for module_type, modules in self.modules.items():
             for m in modules:
                 if self.check_module(m):
-                    aha = import_module(m)
+                    m = import_module(m)
                     try:
-                        obj = aha.Module(self.apk)
+                        obj = m.Module(self.apk)
                         result = obj.run()
+                        status = result['status']
+                        module_res = result['result']
+                        if status:
+                            self.vuln_obj.append(module_res)
+                            printGreen(f'[*] {module_res.name}')
+                            print(f'{module_res.content}')
                     except Exception as e:
                         print(f"[!] Load {m} Error.", e)
-                    self.modules_load.append(aha)
+                    self.modules_load.append(m)
 
     def check_module(self, module):
         """

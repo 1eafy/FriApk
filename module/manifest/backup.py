@@ -5,8 +5,17 @@ from asn1crypto import x509, keys
 class Module:
     def __init__(self, apk):
         self.apk = apk
-        a = self.apk.get_certificates_v1()[0]
+        self.module_info = {
+            "Name": "",
+            "Author": "",
+            "Date": "",
+            "Description": "",
+            "Reference": [
+                "",
+            ],
+        }
 
+        self.status = False
         # dex = self.apk.get_dex()
         # dex_name = self.apk.get_dex_names()
         # 返回一个filter对象,
@@ -44,6 +53,9 @@ class Module:
             #     print(k, v)
 
     def run(self):
-        pass
+        return {
+            "status": self.status,
+            'result': None
+        }
         # print("Check backup")
 
