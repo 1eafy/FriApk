@@ -29,6 +29,8 @@ class FriApk:
 
         }
 
+        self.vuln_obj = []
+
     def load_apk(self):
         if is_android(self.apk_filename) == "APK":
             self.apk = apk.APK(self.apk_filename, testzip=False)

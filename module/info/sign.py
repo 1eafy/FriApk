@@ -1,4 +1,6 @@
-from asn1crypto import x509, keys
+from asn1crypto import x509
+from common.Vulnerability import *
+from libs.androguard.core.bytecodes import apk
 import binascii
 from oscrypto import asymmetric
 
@@ -12,6 +14,7 @@ class Module:
             "Author" : "xxx",
             "Description" : "获取应用签名证书信息.代码摘抄: androguard.cli.main -> androsign_main",
         }
+        self.status = False
 
     def run(self):
         from libs.androguard.util import get_certificate_name_string
