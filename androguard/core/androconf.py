@@ -4,8 +4,8 @@ import logging
 import tempfile
 from colorama import init, Fore
 
-from libs.androguard import __version__
-from libs.androguard.core.api_specific_resources import load_permission_mappings, load_permissions
+from androguard import __version__
+from androguard.core.api_specific_resources import load_permission_mappings, load_permissions
 ANDROGUARD_VERSION = __version__
 
 log = logging.getLogger("androguard.default")

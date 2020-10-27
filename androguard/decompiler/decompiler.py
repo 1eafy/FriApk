@@ -27,7 +27,7 @@ from androguard.util import read
 from pygments.filter import Filter
 from pygments import highlight
 from pygments.lexers import get_lexer_by_name
-from pygments.formatters import TerminalFormatter
+from pygments.formatters.terminal import TerminalFormatter
 from pygments.token import Token
 
 import logging

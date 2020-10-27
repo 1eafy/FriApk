@@ -1,7 +1,7 @@
-from libs.androguard.core import androconf
-from libs.androguard.util import read, get_certificate_name_string
+from androguard.core import androconf
+from androguard.util import read, get_certificate_name_string
 
-from libs.androguard.core.bytecodes.axml import ARSCParser, AXMLPrinter, ARSCResTableConfig, AXMLParser, format_value, START_TAG, END_TAG, TEXT, END_DOCUMENT
+from androguard.core.bytecodes.axml import ARSCParser, AXMLPrinter, ARSCResTableConfig, AXMLParser, format_value, START_TAG, END_TAG, TEXT, END_DOCUMENT
 
 import io
 from zlib import crc32

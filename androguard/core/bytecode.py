@@ -5,8 +5,8 @@ import textwrap
 import json
 import logging
 
-from libs.androguard.core.androconf import CONF, color_range
-from libs.androguard.core.bytecodes.dvm_types import Kind, Operand
+from androguard.core.androconf import CONF, color_range
+from androguard.core.bytecodes.dvm_types import Kind, Operand
 
 log = logging.getLogger("androguard.bytecode")
 

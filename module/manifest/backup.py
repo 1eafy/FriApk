@@ -61,10 +61,15 @@ class Module:
 
         level = INFO
         content = f"\t{allow_backup}"
-        poc = None
+        poc = f"""{RED}
+        BackupPOC:
+            >>> adb backup -f back.ab -noapk {self.apk.get_package()}
+        Install App on other Phone.
+        RecoveryPOC:
+            >>> adb restore back.ab{END}"""
         suggestion = None
 
-        if allow_backup.lower() == "true":
+        if allow_backup and allow_backup.lower() == "true":
             level = HIGH
             suggestion = f"\t{RED}设置AndroidManifest.xml的allowBackup标志为false{END}"
 

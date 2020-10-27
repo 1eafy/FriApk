@@ -2,10 +2,10 @@ import re
 import collections
 from operator import itemgetter
 import time
-from libs.androguard.core.androconf import is_ascii_problem, load_api_specific_resource_module
-from libs.androguard.core.bytecodes import dvm
+from androguard.core.androconf import is_ascii_problem, load_api_specific_resource_module
+from androguard.core.bytecodes import dvm
 import logging
-from libs.androguard.core import bytecode, mutf8
+from androguard.core import bytecode, mutf8
 import networkx as nx
 from enum import IntEnum
 

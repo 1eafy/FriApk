@@ -26,15 +26,10 @@ class Module:
         poc = None
         suggestion = None
 
-        if allow_debug.lower() == "true":
+        if allow_debug and allow_debug.lower() == "true":
             level = HIGH
-            poc = f"""{RED}
-    BackupPOC:
-        >>> adb backup -f back.ab -noapk {self.apk.get_package()}
-    Install App on other Phone.
-    RecoveryPOC:
-        >>> adb restore back.ab{END}
-"""
+            poc = None
+
             suggestion = f"\t{RED}设置AndroidManifest.xml的debuggable标志为false{END}"
 
 

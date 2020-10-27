@@ -1,9 +1,9 @@
 from re import search, findall
 from common.PrintUtils import *
-from libs.androguard.core.bytecodes import apk
-from libs.androguard.core.androconf import *
+from androguard.core.bytecodes import apk
+from androguard.core.androconf import *
 from importlib import util, import_module
-from base.protect import *
+from common.protect import *
 
 
 class FriApk:
@@ -33,6 +33,7 @@ class FriApk:
             if self.apk.is_valid_APK():
                 self.all_permission = self.apk.get_permissions()
                 self.is_protect, self.protect_type = self.get_protect_and_type()
+                self.show_apk_info()
                 self.load_modules()
                 self.show_certificate()
         else:
@@ -48,21 +49,23 @@ class FriApk:
             for m in modules:
                 if self.check_module(m):
                     m = import_module(m)
-                    try:
-                        obj = m.Module(self.apk)
-                        result = obj.run()
-                        status = result['status']
-                        module_res = result['result']
-                        if status:
-                            self.vuln_obj.append(module_res)
-                            printGreen(f'[*] {module_res.name}')
-                            print(f'{module_res.content}')
-                            if module_res.poc:
-                                print(module_res.poc)
-                            if module_res.suggestion:
-                                print(module_res.suggestion)
-                    except Exception as e:
-                        print(f" [!] Load {m} Error.", e)
+                    # try:
+                    obj = m.Module(self.apk)
+                    result = obj.run()
+                    status = result['status']
+                    module_res = result['result']
+                    if status:
+                        self.vuln_obj.append(module_res)
+                        printGreen(f'[*] {module_res.name}')
+                        print(f'{module_res.content}')
+                        if module_res.poc:
+                            printGreen("\t[+] POC")
+                            print(module_res.poc+"\n")
+                        if module_res.suggestion:
+                            printGreen("\t[+] 修复建议:")
+                            print(module_res.suggestion+"\n")
+                    # except Exception as e:
+                    #     print(f" [!] Load {m} Error.", e)
                     self.modules_load.append(m)
 
     def check_module(self, module):
@@ -73,12 +76,13 @@ class FriApk:
         :return: module spec
         """
 
-        # print(f"[?] Check Module")
+        print(f"[?] Check Module")
         module_spec = util.find_spec(module)
         # print(f"module_spec={module_spec}")
         if not module_spec: print(f"[×] Module: {module} not found.")
         # pass
-        # print(f"[√] Module: {module} can be imported.")
+        else:
+            print(f"[√] Module: {module} can be imported.")
         # else:
         # print(f"[×] Module: {module} not found.")
         return module_spec
@@ -105,3 +109,12 @@ class FriApk:
 
     def show_certificate(self):
         pass
+
+    def show_apk_info(self):
+        printGreen(f"[*] 应用基本信息")
+        print(f"""\t应用名称: {self.apk.get_app_name()}
+        包名: {self.apk.get_package()}
+        加固: {self.protect_type if self.is_protect else "未加固"}
+        大小: {os.path.getsize(self.apk.filename)} Bytes
+        MainActivity: {self.apk.get_main_activity()}
+        """)

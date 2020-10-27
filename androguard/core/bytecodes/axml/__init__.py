@@ -1,7 +1,7 @@
-from libs.androguard.core import bytecode
+from androguard.core import bytecode
 
-from libs.androguard.core.resources import public
-from libs.androguard.core.bytecodes.axml.types import *
+from androguard.core.resources import public
+from androguard.core.bytecodes.axml.types import *
 
 from struct import pack, unpack
 from xml.sax.saxutils import escape

@@ -10,12 +10,12 @@ import zlib
 import hashlib
 from enum import IntEnum
 
-from libs.androguard.core import bytecode
-from libs.androguard.core.bytecodes.apk import APK
-from libs.androguard.core.androconf import CONF
+from androguard.core import bytecode
+from androguard.core.bytecodes.apk import APK
+from androguard.core.androconf import CONF
 
-from libs.androguard.core import mutf8
-from libs.androguard.core.bytecodes.dvm_types import (
+from androguard.core import mutf8
+from androguard.core.bytecodes.dvm_types import (
         TypeMapItem,
         ACCESS_FLAGS,
         TYPE_DESCRIPTOR,

@@ -6,10 +6,10 @@ import zlib
 import multiprocessing
 import logging
 
-from libs.androguard.core import androconf
-from libs.androguard.core.bytecodes import apk, dvm, axml
-from libs.androguard.core.analysis import analysis
-from libs.androguard.util import read
+from androguard.core import androconf
+from androguard.core.bytecodes import apk, dvm, axml
+from androguard.core.analysis import analysis
+from androguard.util import read
 
 l = logging.getLogger("androguard.auto")
 

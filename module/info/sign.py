@@ -1,8 +1,22 @@
 from asn1crypto import x509
 from common.Vulnerability import *
-from libs.androguard.core.bytecodes import apk
 import binascii
 from re import findall
+
+
+"""
+从Android 7.0开始, 谷歌增加新签名方案 V2 Scheme (APK Signature);
+但Android 7.0以下版本, 只能用旧签名方案 V1 scheme (JAR signing)
+
+v1签名是对jar进行签名，V2签名是对整个apk签名：
+    官方介绍就是：v2签名是在整个APK文件的二进制内容上计算和验证的，v1是在归档文件中解压缩文件内容。
+
+二者签名所产生的结果：
+v1：在v1中只对未压缩的文件内容进行了验证，所以在APK签名之后可以进行很多修改——文件可以移动，甚至可以重新压缩。
+    即可以对签名后的文件在进行处理
+v2：v2签名验证了归档中的所有字节，而不是单独的ZIP条目，如果您在构建过程中有任何定制任务，
+    包括篡改或处理APK文件，请确保禁用它们，否则您可能会使v2签名失效，从而使您的APKs与Android 7.0和以上版本不兼容。
+"""
 
 
 class Module:
@@ -26,7 +40,7 @@ class Module:
 
         # 判断有无签名，无签名返回None
         if self.apk.get_signature():
-            from libs.androguard.util import get_certificate_name_string
+            from androguard.util import get_certificate_name_string
             certs = set(self.apk.get_certificates_der_v2() + self.apk.get_certificates_der_v3() +
                         [self.apk.get_certificate_der(x) for x in self.apk.get_signature_names()])
             pkeys = set(self.apk.get_public_keys_der_v2() + self.apk.get_public_keys_der_v3())
@@ -37,7 +51,7 @@ class Module:
 
             for cert in certs:
                 x509_cert = x509.Certificate.load(cert)
-                result.append('\tIssuer:{}'.format(get_certificate_name_string(x509_cert.issuer)))
+                result.append('\tIssuer: {}'.format(get_certificate_name_string(x509_cert.issuer)))
                 result.append('\tSubject: {}'.format(get_certificate_name_string(x509_cert.subject)))
                 result.append('\t序列号: {}'.format(hex(x509_cert.serial_number)[2:].upper()))
                 result.append('\tHash Algorithm: {}'.format(x509_cert.hash_algo.upper()))

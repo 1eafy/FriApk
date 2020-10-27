@@ -4,7 +4,7 @@ from re import search
 from common.PrintUtils import *
 from common.Utils import *
 
-from base.protect import *
+from common.protect import *
 from config.config import *
 from xml.etree import ElementTree as ET
 
@@ -114,7 +114,7 @@ class FriApk:
                     if search(so_r, file, flags=0):
                         self.isProtect = True
                         print(f"\t[+]{so_name}")
-                        return
+                        # return
                         # break
                 # 跳出二层For循环方法
                 # 只有当for正常结束的时候才会执行else语句

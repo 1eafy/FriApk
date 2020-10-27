@@ -7,7 +7,7 @@ from base.FriApk_v2 import FriApk
 # from base.FriApk import FriApk
 
 __toolsName__ = "FriApk"
-__version__ = "1.0"
+__version__ = "0.1"
 __author__ = "***"
 
 def banner():
