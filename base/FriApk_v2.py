@@ -77,13 +77,13 @@ class FriApk:
         :return: module spec
         """
 
-        print(f"[?] Check Module")
+        # print(f"[?] Check Module")
         module_spec = util.find_spec(module)
         # print(f"module_spec={module_spec}")
         if not module_spec: print(f"[×] Module: {module} not found.")
         # pass
-        else:
-            print(f"[√] Module: {module} can be imported.")
+        # else:
+        #     print(f"[√] Module: {module} can be imported.")
         # else:
         # print(f"[×] Module: {module} not found.")
         return module_spec

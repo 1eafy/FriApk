@@ -91,6 +91,6 @@ class Module:
                           )
 
         return {
-            "status": self.status,
+            "status": False,
             'result': vuln
         }

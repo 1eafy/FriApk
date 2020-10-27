@@ -19,6 +19,7 @@ from subprocess import Popen, PIPE, STDOUT
 
 import tempfile
 import os
+from re import findall
 
 from androguard.core.androconf import rrmdir
 from androguard.decompiler.dad import decompile
@@ -678,8 +679,11 @@ class DecompilerJADX:
                     continue
                 # as the path begins always with `self.res` (hopefully), we remove that length
                 # also, all files should end with .java
-                path = os.path.join(root, f)[len(tmpfolder) + 1:-5]
+                # path = os.path.join(root, f)[len("sources/") + 1:-5]
+                path = os.path.join(root, f)
                 path = path.replace(os.sep, "/")
+                path = findall(".*/sources/(.*)\.java", path)
+                path = path[0] if len(path) > 0 else ""
 
                 # Special care for files without package
                 # All files that have no package set, will get the
@@ -696,7 +700,7 @@ class DecompilerJADX:
 
         # Next, try to find files for the classes we have
         for cl in andr_class_names:
-            fname = self._find_class(str(cl), tmpfolder)
+            fname = self._find_class(str(cl), os.path.join(tmpfolder, 'sources'))
             if fname:
                 if "L{};".format(cl) not in self.classes:
                     with open(fname, "rb") as fp:

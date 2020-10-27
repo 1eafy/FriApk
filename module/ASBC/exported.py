@@ -115,7 +115,7 @@ class Module:
                           poc=poc,
                           )
 
-        self.status = True
+        self.status = False
 
         return {
             "status": self.status,

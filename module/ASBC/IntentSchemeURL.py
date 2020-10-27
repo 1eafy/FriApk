@@ -3,7 +3,7 @@ from androguard.decompiler.dad.decompile import DvMethod
 from androguard.core.analysis.analysis import Analysis
 from pprint import pprint as pp
 from androguard.decompiler.decompiler import DecompilerJADX
-from re import search, findall
+from config.config import JADX_PATH
 
 class Module:
     def __init__(self, apk):
@@ -29,9 +29,13 @@ Android Browser的攻击手段——Intent Scheme URLs攻击。这种攻击方�
         for dex in self.apk.get_all_dex():
             d = dvm.DalvikVMFormat(dex)
             dx = Analysis(d)
-            decompiler = DecompilerJADX(d, dx, jadx=r"/root/Desktop/FriApk/jadx/bin/jadx")
+            decompiler = DecompilerJADX(d, dx, jadx=JADX_PATH)
             d.set_decompiler(decompiler)
-            print(decompiler)
+
+            for cls in d.get_classes():
+                print(cls.get_name())
+                print(cls.get_source())
+                break
 
         return {
             "status": False,
@@ -57,10 +61,6 @@ Android Browser的攻击手段——Intent Scheme URLs攻击。这种攻击方�
         #                 print(d.__dict__)
         pass
 
-
-# TODO 在Linux系统上尝试借助Jadx反编译出Java源码
-    def jadx_test(self):
-        pass
 
 
 
