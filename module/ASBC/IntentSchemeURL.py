@@ -26,35 +26,13 @@ Android Browser的攻击手段——Intent Scheme URLs攻击。这种攻击方�
 # 腾讯金刚检测Diva：https://service.security.tencent.com/uploadimg_dir/jingang/82ab8b2193b3cfb1c737e3a786be363a.html
     # c7c91424ab41179ead7186cf586c8a3d
     def run(self):
-        i = 1
-        vm = Analysis()
         for dex in self.apk.get_all_dex():
             d = dvm.DalvikVMFormat(dex)
-            vm.add(d)
-            vm.create_xref()
-            a = vm.find_methods(methodname="setJavaScriptEnabled")
-            for i in a:
-                # print(i.show())
-                print(i.full_name)
-                print(i.get_class_name())
-            # for i in vm.get_methods():
-            #     flag = findall(b"setJavaScriptEnabled", i.name)
-            #     # if i.name.find(b"setJavaScriptEnabled"):
-            #     if flag:
-            #         print(flag)
-            #         print(i.name)
+            dx = Analysis(d)
+            decompiler = DecompilerJADX(d, dx, jadx=r"/root/Desktop/FriApk/jadx/bin/jadx")
+            d.set_decompiler(decompiler)
+            print(decompiler)
 
-                    # i+=1
-                    # dv = DvMethod(m.get_name())
-                # else:
-                #     continue
-                # break
-
-                # for m in methods:
-                #     m_name = m.name.decode()
-                #     f = search("addJavascriptInterface", m_name)
-                #     # if "addJavascriptInterface":
-                #     print(f)
         return {
             "status": False,
             'result': None,
@@ -81,18 +59,9 @@ Android Browser的攻击手段——Intent Scheme URLs攻击。这种攻击方�
 
 
 # TODO 在Linux系统上尝试借助Jadx反编译出Java源码
-"""
-        for dex in self.apk.get_all_dex():
-            d = dvm.DalvikVMFormat(dex)
-            dx = Analysis(d)
-            decompiler = DecompilerJADX(d, dx, jadx=r"E:\file\Android\jadx-1.1.0\bin\jadx")
-            d.set_decompiler(decompiler)
-            for c in d.get_classes():
-                for m in c.get_methods():
-                    if i > 3: break
-                    pp(m.get_source())
-                    i+=1
-"""
+    def jadx_test(self):
+        pass
+
 
 
 
