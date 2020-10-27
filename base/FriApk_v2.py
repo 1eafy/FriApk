@@ -41,7 +41,8 @@ class FriApk:
 
     def load_modules(self):
         for root, _, files in list(os.walk("module"))[1:]:
-            module_type = findall(r"module\\(.*)", root)[0]
+            root = root.replace("\\", "/")
+            module_type = findall(r"module/(.*)", root)[0]
             if len(files):
                 self.modules[module_type] = ['.'.join(['module', module_type, m[:-3]]) for m in files if
                                              m.endswith('py')]

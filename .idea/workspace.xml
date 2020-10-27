@@ -20,129 +20,12 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/androguard/cli/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/cli/entry_points.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/cli/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/Banners.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/BinViewMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/DataModel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/DisasmViewMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/HexViewMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/SourceViewMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/TextDecorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/TextSelection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/ViewMode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/androguard.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/annotation.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/apiwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/binwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/cemu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/fileloading.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/mainwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/methodswindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/renamewindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/resourceswindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/search.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/sourcewindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/stringswindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/treewindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/androguard/gui/xrefwindow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx/jadx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx/jadx-gui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx/jadx-gui.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx/jadx.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/ASBC/providerDir.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/manifest/intent-based.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/FriApk.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/protect.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/protect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/analysis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/analysis/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/analysis/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/analysis/auto.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/analysis/auto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/analysis/tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/analysis/tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/androconf.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/androconf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_10.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_10.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_13.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_13.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_14.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_14.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_15.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_15.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_16.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_16.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_17.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_18.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_18.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_19.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_19.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_21.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_21.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_22.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_22.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_23.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_23.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_24.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_24.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_25.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_25.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_26.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_26.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_27.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_27.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_28.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_28.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_4.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_4.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_5.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_6.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_6.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_7.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_7.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_8.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_8.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/aosp_permissions/permissions_9.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/aosp_permissions/permissions_9.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_16.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_16.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_17.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_17.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_18.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_18.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_19.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_19.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_21.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_21.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_22.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_22.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_23.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_23.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_24.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_24.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/api_specific_resources/api_permission_mappings/permissions_25.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/api_specific_resources/api_permission_mappings/permissions_25.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecode.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecodes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecodes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecodes/apk.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecodes/apk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecodes/axml/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecodes/axml/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecodes/axml/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecodes/axml/types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecodes/dvm.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecodes/dvm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/bytecodes/dvm_types.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/bytecodes/dvm_types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/mutf8.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/mutf8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/resources/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/resources/public.json" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/resources/public.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/resources/public.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/resources/public.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/core/resources/public.xml" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/core/resources/public.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/basic_blocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/basic_blocks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/control_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/control_flow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/dast.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/dast.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/dataflow.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/dataflow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/decompile.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/decompile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/instruction.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/instruction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/node.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/node.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/opcode_ins.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/opcode_ins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/dad/writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/dad/writer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/decompiler/decompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/decompiler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/misc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/androguard/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/ASBC/exported.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/exported.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/info/sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/info/sign.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/manifest/backup.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/manifest/backup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/manifest/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/manifest/debug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/manifest/permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/manifest/permission.py" afterDir="false" />
-    </list>
+    <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="" />
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +63,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="0cba0f93-016c-4585-a130-216f0c8f1b42" />
+  <component name="JupyterTrust" id="a6ad0a27-72fb-46df-a7a1-946fdfc656cf" />
   <component name="ProjectId" id="1iOSFyqe1cmLK4n04TAbl25OdvP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -202,7 +85,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -390,6 +273,7 @@
       <workItem from="1603329972246" duration="16442000" />
       <workItem from="1603694786957" duration="2405000" />
       <workItem from="1603698801685" duration="2231000" />
+      <workItem from="1603768829440" duration="62000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -429,7 +313,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -519,10 +403,11 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state width="1506" height="280" key="GridCell.Tab.1.right/0.0.1549.871@0.0.1549.871" timestamp="1603108759504" />
-    <state x="284" y="81" key="SettingsEditor" timestamp="1603330988662">
-      <screen x="0" y="0" width="1549" height="871" />
+    <state x="667" y="165" width="1022" height="733" key="SettingsEditor" timestamp="1603768891718">
+      <screen x="0" y="31" width="1918" height="910" />
     </state>
     <state x="284" y="81" key="SettingsEditor/0.0.1549.871@0.0.1549.871" timestamp="1603330988662" />
+    <state x="667" y="165" width="1022" height="733" key="SettingsEditor/0.31.1918.910@0.31.1918.910" timestamp="1603768891718" />
     <state x="623" y="351" key="VCS.ChangelistChooser" timestamp="1603112735856">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -535,6 +420,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1549.871@0.0.1549.871" timestamp="1603100639539" />
+    <state x="744" y="402" width="430" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603768837686">
+      <screen x="0" y="31" width="1918" height="910" />
+    </state>
+    <state x="744" y="402" width="430" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.31.1918.910@0.31.1918.910" timestamp="1603768837686" />
     <state x="550" y="148" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603158944595">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -557,18 +446,18 @@
     <state x="497" y="348" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1549.871@0.0.1549.871" timestamp="1603272509535" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FriApk$4.coverage" NAME="4 Coverage Results" MODIFIED="1602769805002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$StaticScan.coverage" NAME="StaticScan Coverage Results" MODIFIED="1602749754839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$FriApk.coverage" NAME="FriApk Coverage Results" MODIFIED="1602064831579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$sfsdf.coverage" NAME="sfsdf Coverage Results" MODIFIED="1602769941072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$ff.coverage" NAME="ff Coverage Results" MODIFIED="1602769792362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$IntentSchemeURL.coverage" NAME="IntentSchemeURL Coverage Results" MODIFIED="1603362374018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module/ASBC" />
     <SUITE FILE_PATH="coverage/FriApk$3.coverage" NAME="3 Coverage Results" MODIFIED="1602750186795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$main.coverage" NAME="main Coverage Results" MODIFIED="1603075170716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FriApk$2.coverage" NAME="2 Coverage Results" MODIFIED="1602750219388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1603158667049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$asd.coverage" NAME="asd Coverage Results" MODIFIED="1602758597590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$IntentSchemeURL.coverage" NAME="IntentSchemeURL Coverage Results" MODIFIED="1603362374018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module/ASBC" />
-    <SUITE FILE_PATH="coverage/FriApk$util.coverage" NAME="util Coverage Results" MODIFIED="1602989914322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/androguard" />
+    <SUITE FILE_PATH="coverage/FriApk$4.coverage" NAME="4 Coverage Results" MODIFIED="1602769805002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$ff.coverage" NAME="ff Coverage Results" MODIFIED="1602769792362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$sfsdf.coverage" NAME="sfsdf Coverage Results" MODIFIED="1602769941072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$FriApk.coverage" NAME="FriApk Coverage Results" MODIFIED="1602064831579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$sdfa.coverage" NAME="sdfa Coverage Results" MODIFIED="1602759098450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$asd.coverage" NAME="asd Coverage Results" MODIFIED="1602758597590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1603158667049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$util.coverage" NAME="util Coverage Results" MODIFIED="1602989914322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/androguard" />
+    <SUITE FILE_PATH="coverage/FriApk$StaticScan.coverage" NAME="StaticScan Coverage Results" MODIFIED="1602749754839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
   </component>
 </project>
