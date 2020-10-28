@@ -1,5 +1,12 @@
 from common.PrintUtils import *
 from common.Vulnerability import *
+from androguard.core.bytecodes import dvm
+from androguard.decompiler.dad.decompile import DvMethod
+from androguard.core.analysis.analysis import Analysis
+from pprint import pprint as pp
+from androguard.decompiler.decompiler import DecompilerJADX
+from config.config import JADX_PATH
+import re
 
 NS = "{http://schemas.android.com/apk/res/android}"
 
@@ -87,7 +94,8 @@ class Module:
                     # printRed(self.apk.get_min_sdk_version())
                     # printRed(self.apk.get_target_sdk_version())
                     if flag == "true":
-                        exported_tag[tag] += f"\t\t{YELLOW}{tag_name}{END}\n"
+                        # exported_tag[tag] += f"\t\t{YELLOW}{tag_name}{END}\n"
+                        exported_tag[tag] += f"{tag_name}"
                     else:
                         exported_tag[tag] += f"\t\t{BLUE}{tag_name}(根据Android SDK确认是否存在此风险, Android SDK >= 16){END}\n"
 
@@ -97,8 +105,32 @@ class Module:
         2. 设置组件访问权限。对跨应用间调用的组件或者公开的receiver、service、activity和activity-alias设置权限，同时将权限的protectionLevel设置为"signature"或"signatureOrSystem"。
         3. 组件传输数据验证。对组件之间，特别是跨应用的组件之间的数据传入与返回做验证和增加异常处理，防止恶意调试数据传入，防止Dos攻击，更要防止敏感数据返回"""
         # print(exported_tag)
+        # for k, v in exported_tag.items():
+        #     content += (f"\t{k.capitalize()}:\n{v}")
+
+        if len(exported_tag['provider']) == 31:
+            c_uri = ""
+            for dex in self.apk.get_all_dex():
+                d = dvm.DalvikVMFormat(dex)
+                dx = Analysis(d)
+                decompiler = DecompilerJADX(d, dx, jadx=JADX_PATH)
+                d.set_decompiler(decompiler)
+                a = exported_tag['provider']
+                a = a.replace('.', '/')
+                a = f"L{a};"
+                aaa = d.get_class(a)
+                if aaa:
+                    src = aaa.get_source()
+                    content_uri = re.search("""parse\("content://(.*)"\);""", src, re.IGNORECASE)
+                    if content_uri:
+                        c_uri = f"content://{content_uri.group(1)}"
+            exported_tag['provider'] = YELLOW + "\t\t" + exported_tag['provider'] + "\n\t\t\t" + "URI: " + c_uri + END + "\n"
+                # for i in d.get_classes():
+                #     if a == i.get_name().__str__():
+                #         printRed(i.get_name().__str__())
         for k, v in exported_tag.items():
             content += (f"\t{k.capitalize()}:\n{v}")
+
 
         poc = """
         Activity POC:
@@ -115,7 +147,7 @@ class Module:
                           poc=poc,
                           )
 
-        self.status = False
+        self.status = True
 
         return {
             "status": self.status,

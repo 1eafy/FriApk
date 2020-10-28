@@ -26,11 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FriApk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FriApk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/reg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module/info/SensitiveInformation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/androguard/decompiler/decompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/androguard/decompiler/decompiler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/ASBC/exported.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/exported.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/info/sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/info/sign.py" afterDir="false" />
@@ -97,7 +99,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor.code.editing" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -293,6 +295,7 @@
       <workItem from="1603694786957" duration="2405000" />
       <workItem from="1603698801685" duration="2231000" />
       <workItem from="1603768829440" duration="62000" />
+      <workItem from="1603847814769" duration="12671000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -315,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603205134876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Complete decompilation using jadx in Windows operating system">
+      <created>1603789807254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603789807254</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +357,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete the extraction of Signature and Certificate information." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete the extraction of Signature and Certificate information." />
+    <MESSAGE value="Complete decompilation using jadx in Windows operating system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete decompilation using jadx in Windows operating system" />
   </component>
   <component name="WindowStateProjectService">
     <state x="678" y="365" key="#Custom_Plugin_Repositories" timestamp="1603275311953">
@@ -366,14 +377,18 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="230" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1549.871@0.0.1549.871" timestamp="1603784189259" />
+    <state x="538" y="237" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603849458943">
+      <screen x="0" y="0" width="1549" height="871" />
+    </state>
+    <state x="538" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.871@0.0.1549.871" timestamp="1603849458943" />
     <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603272767509">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1603272767509" />
-    <state x="219" y="5" key="CommitChangelistDialog2" timestamp="1603205133040">
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1603789805213">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="219" y="5" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1603205133040" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1603789805213" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -426,19 +441,19 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state width="1506" height="280" key="GridCell.Tab.1.right/0.0.1549.871@0.0.1549.871" timestamp="1603108759504" />
-    <state x="667" y="165" width="1022" height="733" key="SettingsEditor" timestamp="1603768891718">
-      <screen x="0" y="31" width="1918" height="910" />
+    <state x="536" y="105" width="1022" height="733" key="SettingsEditor" timestamp="1603867919833">
+      <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="284" y="81" key="SettingsEditor/0.0.1549.871@0.0.1549.871" timestamp="1603330988662" />
+    <state x="536" y="105" key="SettingsEditor/0.0.1549.871@0.0.1549.871" timestamp="1603867919833" />
     <state x="667" y="165" width="1022" height="733" key="SettingsEditor/0.31.1918.910@0.31.1918.910" timestamp="1603768891718" />
     <state x="623" y="351" key="VCS.ChangelistChooser" timestamp="1603112735856">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1603205141520">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1603789833363">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1603205141520" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1603789833363" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>

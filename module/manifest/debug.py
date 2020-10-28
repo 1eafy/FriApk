@@ -39,7 +39,7 @@ class Module:
                           poc=poc,
                           suggestion=suggestion,
                           )
-        self.status = False
+        self.status = True
 
         return {
             "status": self.status,

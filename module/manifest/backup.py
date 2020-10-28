@@ -61,17 +61,18 @@ class Module:
 
         level = INFO
         content = f"\t{allow_backup}"
-        poc = f"""{RED}
-        BackupPOC:
-            >>> adb backup -f back.ab -noapk {self.apk.get_package()}
-        Install App on other Phone.
-        RecoveryPOC:
-            >>> adb restore back.ab{END}"""
-        suggestion = None
+        poc = ""
+        suggestion = ""
 
         if allow_backup and allow_backup.lower() == "true":
             level = HIGH
             suggestion = f"\t{RED}设置AndroidManifest.xml的allowBackup标志为false{END}"
+            poc = f"""{RED}
+                    BackupPOC:
+                        >>> adb backup -f back.ab -noapk {self.apk.get_package()}
+                    Install App on other Phone.
+                    RecoveryPOC:
+                        >>> adb restore back.ab{END}"""
 
         vuln = Vulnerable(name=self.module_info['Name'],
                           level=level,
@@ -79,7 +80,7 @@ class Module:
                           poc=poc,
                           suggestion=suggestion,
                           )
-        self.status = False
+        self.status = True
 
         return {
             "status": self.status,

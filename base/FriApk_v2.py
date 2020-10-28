@@ -30,12 +30,14 @@ class FriApk:
     def load_apk(self):
         if is_android(self.apk_filename) == "APK":
             self.apk = apk.APK(self.apk_filename, testzip=False)
+            printGreen(f"[*] 是否有效APK")
             if self.apk.is_valid_APK():
+                print(f"\t[+] {self.apk.is_valid_APK()}")
                 self.all_permission = self.apk.get_permissions()
                 self.is_protect, self.protect_type = self.get_protect_and_type()
                 self.show_apk_info()
                 self.load_modules()
-                self.show_certificate()
+                # self.show_certificate()
         else:
             printRed("[!] File is not APK.")
 
@@ -54,8 +56,8 @@ class FriApk:
                     obj = m.Module(self.apk)
                     result = obj.run()
                     status = result['status']
-                    module_res = result['result']
                     if status:
+                        module_res = result['result']
                         self.vuln_obj.append(module_res)
                         printGreen(f'[*] {module_res.name}')
                         print(f'{module_res.content}')
@@ -77,13 +79,14 @@ class FriApk:
         :return: module spec
         """
 
-        # print(f"[?] Check Module")
+        print(f"[?] Check Module")
         module_spec = util.find_spec(module)
         # print(f"module_spec={module_spec}")
         if not module_spec: print(f"[×] Module: {module} not found.")
         # pass
-        # else:
-        #     print(f"[√] Module: {module} can be imported.")
+        else:
+            print(f"[√] Module: {module} can be imported.")
+            print(f"[*] Loading {module} Module ...")
         # else:
         # print(f"[×] Module: {module} not found.")
         return module_spec
