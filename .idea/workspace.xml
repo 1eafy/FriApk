@@ -25,17 +25,55 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="Test">
-      <change afterPath="$PROJECT_DIR$/base/DEXDump.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/agent.js" afterDir="false" />
+    <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="Complete the basic function module.">
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-clst.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-res.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/animal-sniffer-annotations-1.18.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/annotations-18.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-runtime-3.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/apksig-3.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/asm-7.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/baksmali-2.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/checker-qual-2.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-lang3-3.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-text-1.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dexlib2-2.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dx-1.16.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/error_prone_annotations-2.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/failureaccess-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/gson-2.8.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/guava-28.1-jre.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/image-viewer-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/j2objc-annotations-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-cli-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-core-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-gui-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jcommander-1.78.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jfontchooser-1.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jsr305-3.0.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/reactive-streams-1.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rsyntaxtextarea-3.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava-2.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava2-swing-0.3.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/slf4j-api-1.7.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/smali-2.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/stringtemplate-3.2.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/util-2.3.4.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/DumpDEX.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/adb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/apktool_2.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx-gui" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx-gui.bat" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx.bat" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx.bat" afterDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +125,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/base" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,17 +137,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Python\FriApk\libs" />
+      <recent name="F:\Python\FriApk\base" />
+      <recent name="F:\Python\FriApk\libs\jadx" />
+      <recent name="F:\Python\FriApk" />
+      <recent name="F:\Python\FriApk\tools" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Python\FriApk" />
       <recent name="F:\Python\FriApk\common" />
       <recent name="F:\Python\FriApk\base" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Python\FriApk\base" />
-      <recent name="F:\Python\FriApk\libs\jadx" />
-      <recent name="F:\Python\FriApk" />
-      <recent name="F:\Python\FriApk\libs" />
-      <recent name="F:\Python\FriApk\tools" />
     </key>
   </component>
   <component name="RunManager" selected="Python.DEXDump">
@@ -297,6 +335,7 @@
       <workItem from="1603886716860" duration="1220000" />
       <workItem from="1603935083272" duration="15948000" />
       <workItem from="1604026662739" duration="1376000" />
+      <workItem from="1604280245927" duration="2781000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -333,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603880870528</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Complete the basic function module.">
+      <created>1604280554968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604280554968</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +412,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete the extraction of Signature and Certificate information." />
     <MESSAGE value="Complete decompilation using jadx in Windows operating system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete decompilation using jadx in Windows operating system" />
+    <MESSAGE value="Complete the basic function module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete the basic function module." />
   </component>
   <component name="WindowStateProjectService">
     <state x="678" y="365" key="#Custom_Plugin_Repositories" timestamp="1603275311953">
@@ -389,14 +436,14 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="538" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.871@0.0.1549.871" timestamp="1603941908644" />
-    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603272767509">
+    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604280244989">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1603272767509" />
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1603880963513">
+    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604280244989" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604310653173">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1603880963513" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604310653173" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -458,10 +505,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1603881019151">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604280559910">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1603881019151" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604280559910" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>

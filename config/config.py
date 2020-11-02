@@ -7,10 +7,11 @@ TOOLS_PATH = join(getcwd(), 'libs')
 BASE_PATH = dirname(dirname(abspath(__file__)))
 
 # 反编译工具Jadx绝对路径
-JADX_PATH = r"E:\file\Android\jadx-1.1.0\bin\jadx.bat"
+JADX_PATH = normcase(join(BASE_PATH, "libs/jadx-1.1.0/bin/jadx.bat")).replace("\\", sep)
 
 # ADB绝对路径
-ADB_PATH = normcase(join(BASE_PATH, "libs/adb.exe")).replace("\\", sep)
+ADB_PATH = "adb"
+# ADB_PATH = normcase(join(BASE_PATH, "libs/adb.exe")).replace("\\", sep)
 
 # Frida-server在模拟器中的绝对路径
 FRIDA_SERVER_PATH = "/data/local/tmp/frida-server"
