@@ -5,8 +5,10 @@
 ```
 networkx == 2.5
 asn1crypto == 1.4.0
+frida == 12.11.18
 ```
 
+###### **注: frida版本与模拟器的frida-server版本尽量需要对应上**
 # 参考
 - [androguard](https://github.com/androguard/androguard)
 - [apkscanner](https://github.com/gremwell/apkscanner)

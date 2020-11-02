@@ -26,17 +26,16 @@ Android Browser的攻击手段——Intent Scheme URLs攻击。这种攻击方�
 # 腾讯金刚检测Diva：https://service.security.tencent.com/uploadimg_dir/jingang/82ab8b2193b3cfb1c737e3a786be363a.html
     # c7c91424ab41179ead7186cf586c8a3d
     def run(self):
-
         # for dex in self.apk.get_all_dex():
         #     d = dvm.DalvikVMFormat(dex)
         #     dx = Analysis(d)
         #     decompiler = DecompilerJADX(d, dx, jadx=JADX_PATH)
         #     d.set_decompiler(decompiler)
-
-            # for cls in d.get_classes():
-            #     print(cls.get_name())
-            #     print(cls.get_source())
-            #     break
+        #
+        #     for cls in d.get_classes():
+        #         print(cls.get_name())
+        #         print(cls.get_source())
+        #         break
 
         return {
             "status": False,

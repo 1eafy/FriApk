@@ -4,7 +4,9 @@ from androguard.core.bytecodes import apk
 from androguard.core.androconf import *
 from importlib import util, import_module
 from common.protect import *
-
+from common.adb import ADB
+from base import DEXDump
+import threading
 
 class FriApk:
     def __init__(self, args):
@@ -28,18 +30,23 @@ class FriApk:
         self.vuln_obj = []
 
     def load_apk(self):
-        if is_android(self.apk_filename) == "APK":
-            self.apk = apk.APK(self.apk_filename, testzip=False)
-            printGreen(f"[*] 是否有效APK")
-            if self.apk.is_valid_APK():
-                print(f"\t[+] {self.apk.is_valid_APK()}")
-                self.all_permission = self.apk.get_permissions()
-                self.is_protect, self.protect_type = self.get_protect_and_type()
-                self.show_apk_info()
-                self.load_modules()
-                # self.show_certificate()
+        if os.path.exists(self.apk_filename):
+            if is_android(self.apk_filename) == "APK":
+                self.apk = apk.APK(self.apk_filename, testzip=False)
+                printGreen(f"[*] 是否有效APK")
+                if self.apk.is_valid_APK():
+                    print(f"\t[+] {self.apk.is_valid_APK()}")
+                    self.all_permission = self.apk.get_permissions()
+                    self.is_protect, self.protect_type = self.get_protect_and_type()
+
+                    self.show_apk_info()
+                    # self.emulator()
+                    self.load_modules()
+                    # self.show_certificate()
+            else:
+                printRed("[!] File is not APK.")
         else:
-            printRed("[!] File is not APK.")
+            printRed("[!] No Found File.")
 
     def load_modules(self):
         for root, _, files in list(os.walk("module"))[1:]:
@@ -122,3 +129,15 @@ class FriApk:
         大小: {os.path.getsize(self.apk.filename)} Bytes
         MainActivity: {self.apk.get_main_activity()}
         """)
+
+    def emulator(self):
+        adb = ADB()
+        device = adb.get_devices()[0]
+        adb.set_device(device)
+        adb.install(self.apk_filename, device)
+        adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
+        _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
+        f = DEXDump.dumpDex()
+
+        print('脱壳成功')
+
