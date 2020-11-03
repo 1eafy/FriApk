@@ -12,11 +12,11 @@ class ADB:
         self.devices = []
         self.package = ""
         self.SIGSTOP = True
-        if self._exists_adb():
-            res = command(f"{ADB_PATH} devices", encoding="gbk")
-            self.devices = re.findall("(.*)\sdevice\s", res)
-        else:
-            raise FileNotFoundError
+        #if self._exists_adb():
+        #    res = command(f"{ADB_PATH} devices", encoding="gbk")
+        #    self.devices = re.findall("(.*)\sdevice\s", res)
+        #else:
+        #    raise FileNotFoundError
 
     def _exists_adb(self):
         """
@@ -65,6 +65,9 @@ class ADB:
         res = command(f"{self.adb} kill-server")
         print(res)
 
+    def adb_shell(self, cmd):
+	res = command(f"{self.adb} shell {cmd}")
+	print(res)
     # def __del__(self):
     #     print('卸载App')
     #     # res = command(f"{self.adb} -s {self.device} uninstall {self.package}")
