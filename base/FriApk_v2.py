@@ -140,6 +140,7 @@ class FriApk:
             status, res = adb.connect_network("0.0.0.0", port)
             if status: break
 	print(res)
+	print("hahahah")
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.install(self.apk_filename, device)
