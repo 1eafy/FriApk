@@ -66,8 +66,8 @@ class ADB:
         print(res)
 
     def adb_shell(self, cmd):
-	res = command(f"{self.adb} shell {cmd}")
-	print(res)
+        res = command(f"{self.adb} shell {cmd}")
+        print(res)
     # def __del__(self):
     #     print('卸载App')
     #     # res = command(f"{self.adb} -s {self.device} uninstall {self.package}")

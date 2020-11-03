@@ -12,6 +12,8 @@
   <component name="ChangeListManager">
     <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/adb.py" afterDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +38,9 @@
         <entry key="FLASK_APP" value="app" />
       </map>
     </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="develop" />
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -201,11 +206,11 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.config" />
-      <item itemvalue="Python.FriApk_v2" />
       <item itemvalue="Python.DEXDump" />
+      <item itemvalue="Python.FriApk_v2" />
+      <item itemvalue="Python.config" />
       <item itemvalue="Python.docker_avd" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
@@ -277,7 +282,7 @@
       <workItem from="1604280245927" duration="2781000" />
       <workItem from="1604316896131" duration="809000" />
       <workItem from="1604320419642" duration="3242000" />
-      <workItem from="1604367994802" duration="8617000" />
+      <workItem from="1604367994802" duration="8963000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -363,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604392388021</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Linux Test AVD and ADB.">
+      <created>1604394160841</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1604394160841</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,10 +426,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604367993924" />
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604392386996">
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604394159842">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604392386996" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604394159842" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -479,18 +491,18 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604392967994">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604394165417">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604392967994" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604394165417" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1549.871@0.0.1549.871" timestamp="1603100639539" />
-    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604393816748">
+    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604394448113">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1549.871@0.0.1549.871" timestamp="1604393816748" />
+    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1549.871@0.0.1549.871" timestamp="1604394448113" />
     <state x="744" y="402" width="430" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.31.1918.910@0.31.1918.910" timestamp="1603768837686" />
     <state x="550" y="148" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603158944595">
       <screen x="0" y="0" width="1549" height="871" />
