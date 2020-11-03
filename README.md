@@ -7,7 +7,7 @@ networkx == 2.5
 asn1crypto == 1.4.0
 frida == 12.11.18
 ```
-
+pip安装frida的时候耗时比较长 请耐心等待
 ###### **注: frida版本与模拟器的frida-server版本尽量需要对应上**
 # 参考
 - [androguard](https://github.com/androguard/androguard)

@@ -26,12 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/common/docker_avd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/adb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/docker_avd.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/docker_avd.py" afterDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -296,7 +294,7 @@
       <workItem from="1604280245927" duration="2781000" />
       <workItem from="1604316896131" duration="809000" />
       <workItem from="1604320419642" duration="3242000" />
-      <workItem from="1604367994802" duration="4966000" />
+      <workItem from="1604367994802" duration="5898000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -347,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604316958817</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Complete the basic adb,avd module.">
+      <created>1604390558020</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604390558020</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +386,8 @@
     <MESSAGE value="Complete the extraction of Signature and Certificate information." />
     <MESSAGE value="Complete decompilation using jadx in Windows operating system" />
     <MESSAGE value="Complete the basic function module." />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete the basic function module." />
+    <MESSAGE value="Complete the basic adb,avd module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Complete the basic adb,avd module." />
   </component>
   <component name="WindowStateProjectService">
     <state x="678" y="365" key="#Custom_Plugin_Repositories" timestamp="1603275311953">
@@ -408,10 +414,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604367993924" />
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604316956151">
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604390556193">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604316956151" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604390556193" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -473,10 +479,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604316962922">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604390560830">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604316962922" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604390560830" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>

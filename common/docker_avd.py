@@ -7,6 +7,7 @@ class AVD:
     def __init__(self):
         self.container_id = ""
         self.container_name = ""
+        self.port_list = []
 
     def new_avd(self):
         """
@@ -32,6 +33,7 @@ class AVD:
         port_list = findall("0\.0\.0\.0:(\d*)", port_mapping)
         print(port_list)
         print(type(port_list))
+        return port_list
 
     def stop_container(self, container_id_or_name):
         print("stop container...")

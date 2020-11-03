@@ -134,13 +134,14 @@ class FriApk:
     def emulator(self):
         a1 = AVD()
         a1.new_avd()
-
-        adb = ADB()
-        status, res = adb.connect_network("172.26.239.4")
-        if status:
-            pass
-        else:
-            print(res)
+        port_list = a1.get_mapping_port(a1.container_id)
+        for port in port_list:
+            adb = ADB()
+            status, res = adb.connect_network("0.0.0.0", port)
+            if status:
+                print(res)
+            else:
+                print(res)
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.install(self.apk_filename, device)
