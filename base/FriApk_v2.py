@@ -5,6 +5,7 @@ from androguard.core.androconf import *
 from importlib import util, import_module
 from common.protect import *
 from common.adb import ADB
+from common.docker_avd import AVD
 from base import DEXDump
 import threading
 
@@ -39,9 +40,9 @@ class FriApk:
                     self.all_permission = self.apk.get_permissions()
                     self.is_protect, self.protect_type = self.get_protect_and_type()
 
-                    self.show_apk_info()
-                    # self.emulator()
-                    self.load_modules()
+                    # self.show_apk_info()
+                    self.emulator()
+                    # self.load_modules()
                     # self.show_certificate()
             else:
                 printRed("[!] File is not APK.")
@@ -131,13 +132,20 @@ class FriApk:
         """)
 
     def emulator(self):
-        adb = ADB()
-        device = adb.get_devices()[0]
-        adb.set_device(device)
-        adb.install(self.apk_filename, device)
-        adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
-        _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
-        f = DEXDump.dumpDex()
+        a1 = AVD()
+        a1.new_avd()
 
-        print('脱壳成功')
+        adb = ADB()
+        status, res = adb.connect_network("172.26.239.4")
+        if status:
+            pass
+        else:
+            print(res)
+        # device = adb.get_devices()[0]
+        # adb.set_device(device)
+        # adb.install(self.apk_filename, device)
+        # adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
+        # _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
+        # f = DEXDump.dumpDex()
+
 

@@ -25,55 +25,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="Complete the basic function module.">
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-clst.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-res.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/animal-sniffer-annotations-1.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/annotations-18.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-2.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-runtime-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/apksig-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/asm-7.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/baksmali-2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/checker-qual-2.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-lang3-3.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-text-1.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dexlib2-2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dx-1.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/error_prone_annotations-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/failureaccess-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/gson-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/guava-28.1-jre.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/image-viewer-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/j2objc-annotations-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-cli-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-core-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-gui-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jcommander-1.78.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jfontchooser-1.0.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jsr305-3.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-classic-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-core-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/reactive-streams-1.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rsyntaxtextarea-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava-2.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava2-swing-0.3.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/slf4j-api-1.7.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/smali-2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/stringtemplate-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/util-2.3.4.jar" afterDir="false" />
+    <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/common/docker_avd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/adb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/apktool_2.4.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx-gui" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx-gui.bat" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx/jadx.bat" beforeDir="false" afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx.bat" afterDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +108,7 @@
       <recent name="F:\Python\FriApk\base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.DEXDump">
+  <component name="RunManager" selected="Python.docker_avd">
     <configuration name="DEXDump" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FriApk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -195,28 +153,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="adb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FriApk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/common/adb.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="config" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FriApk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,6 +167,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config/config.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker_avd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FriApk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="F:\Python\FriApk\common\docker_avd.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -263,18 +221,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.adb" />
       <item itemvalue="Python.config" />
       <item itemvalue="Python.FriApk_v2" />
       <item itemvalue="Python.DEXDump" />
+      <item itemvalue="Python.docker_avd" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.docker_avd" />
         <item itemvalue="Python.DEXDump" />
         <item itemvalue="Python.config" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.FriApk_v2" />
-        <item itemvalue="Python.adb" />
       </list>
     </recent_temporary>
   </component>
@@ -336,6 +294,9 @@
       <workItem from="1603935083272" duration="15948000" />
       <workItem from="1604026662739" duration="1376000" />
       <workItem from="1604280245927" duration="2781000" />
+      <workItem from="1604316896131" duration="809000" />
+      <workItem from="1604320419642" duration="3242000" />
+      <workItem from="1604367994802" duration="4966000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -379,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604280554968</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Complete the basic function module.">
+      <created>1604316958817</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604316958817</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,14 +404,14 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="538" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.871@0.0.1549.871" timestamp="1603941908644" />
-    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604280244989">
+    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604367993924">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604280244989" />
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604310653173">
+    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604367993924" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604316956151">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604310653173" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604316956151" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -464,22 +432,22 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="584" y="141" key="Github.UntrackedFilesDialog/0.0.1549.871@0.0.1549.871" timestamp="1603098347444" />
-    <state width="1506" height="280" key="GridCell.Tab.0.bottom" timestamp="1603978830766">
+    <state width="1506" height="48" key="GridCell.Tab.0.bottom" timestamp="1604372085849">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="280" key="GridCell.Tab.0.bottom/0.0.1549.871@0.0.1549.871" timestamp="1603978830766" />
-    <state width="1506" height="280" key="GridCell.Tab.0.center" timestamp="1603978830766">
+    <state width="1506" height="48" key="GridCell.Tab.0.bottom/0.0.1549.871@0.0.1549.871" timestamp="1604372085849" />
+    <state width="1506" height="48" key="GridCell.Tab.0.center" timestamp="1604372085849">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="280" key="GridCell.Tab.0.center/0.0.1549.871@0.0.1549.871" timestamp="1603978830766" />
-    <state width="1506" height="280" key="GridCell.Tab.0.left" timestamp="1603978830766">
+    <state width="1506" height="48" key="GridCell.Tab.0.center/0.0.1549.871@0.0.1549.871" timestamp="1604372085849" />
+    <state width="1506" height="48" key="GridCell.Tab.0.left" timestamp="1604372085848">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="280" key="GridCell.Tab.0.left/0.0.1549.871@0.0.1549.871" timestamp="1603978830766" />
-    <state width="1506" height="280" key="GridCell.Tab.0.right" timestamp="1603978830766">
+    <state width="1506" height="48" key="GridCell.Tab.0.left/0.0.1549.871@0.0.1549.871" timestamp="1604372085848" />
+    <state width="1506" height="48" key="GridCell.Tab.0.right" timestamp="1604372085849">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="280" key="GridCell.Tab.0.right/0.0.1549.871@0.0.1549.871" timestamp="1603978830766" />
+    <state width="1506" height="48" key="GridCell.Tab.0.right/0.0.1549.871@0.0.1549.871" timestamp="1604372085849" />
     <state width="1506" height="280" key="GridCell.Tab.1.bottom" timestamp="1603978830766">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -505,10 +473,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604280559910">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604316962922">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604280559910" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604316962922" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -525,10 +493,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="631" y="326" width="556" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1549.871@0.0.1549.871" timestamp="1603272545973" />
-    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1603335567196">
+    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1604371054066">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1549.871@0.0.1549.871" timestamp="1603335567196" />
+    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1549.871@0.0.1549.871" timestamp="1604371054066" />
     <state x="582" y="120" key="svn.repositoryBrowser" timestamp="1603098283747">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -552,6 +520,7 @@
     <SUITE FILE_PATH="coverage/FriApk$DumpDEX.coverage" NAME="DumpDEX Coverage Results" MODIFIED="1603940530738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1603158667049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$asd.coverage" NAME="asd Coverage Results" MODIFIED="1602758597590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$docker_avd.coverage" NAME="docker-avd Coverage Results" MODIFIED="1604372085840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/FriApk$IntentSchemeURL.coverage" NAME="IntentSchemeURL Coverage Results" MODIFIED="1603362374018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module/ASBC" />
     <SUITE FILE_PATH="coverage/FriApk$adb.coverage" NAME="adb Coverage Results" MODIFIED="1603937459327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/FriApk$util.coverage" NAME="util Coverage Results" MODIFIED="1602989914322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/androguard" />

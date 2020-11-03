@@ -44,7 +44,7 @@ class ADB:
 
     def connect_network(self, ip, port=5555):
         res = command(f"{self.adb} connect {ip}:{port}")
-        print(res)
+        return "cannot" not in res, res
 
     def start_app(self, device, package, mainActivity):
         self.package = package
@@ -61,10 +61,14 @@ class ADB:
         thread.start()
         # thread.join()
 
-    def __del__(self):
-        print('卸载App')
-        # res = command(f"{self.adb} -s {self.device} uninstall {self.package}")
-        # print(res)
+    def kill_server(self):
+        res = command(f"{self.adb} kill-server")
+        print(res)
+
+    # def __del__(self):
+    #     print('卸载App')
+    #     # res = command(f"{self.adb} -s {self.device} uninstall {self.package}")
+    #     # print(res)
 
 # if __name__ == '__main__':
 #     apk = r"C:\Users\acer\Desktop\testApk\轻启动_2.15.0.apk"
