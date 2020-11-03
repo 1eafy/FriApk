@@ -29,7 +29,7 @@ class AVD:
         return "".join(str(uuid.uuid4()).split('-'))
 
     def get_mapping_port(self, container_id):
-        port_mapping = command(f"docker port {self.container_name}")
+        port_mapping = command(f"docker port {self.container_id}")
         print(port_mapping)
         port_list = findall("0\.0\.0\.0:(\d*)", port_mapping)
         print(port_list)
