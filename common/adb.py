@@ -42,8 +42,9 @@ class ADB:
         res = command(f"{self.adb} -s {device} install {apk_path}", encoding="gbk")
         print(res)
 
-    def connect_network(self, ip, port=5555):
+    def connect_network(self, ip, port='5555'):
         res = command(f"{self.adb} connect {ip}:{port}")
+        self.device = ip + ":" + port
         return "cannot" not in res, res
 
     def start_app(self, device, package, mainActivity):
@@ -65,9 +66,9 @@ class ADB:
         res = command(f"{self.adb} kill-server")
         print(res)
 
-    def adb_shell(self, cmd):
-        res = command(f"{self.adb} shell {cmd}")
-        print(res)
+    def adb_shell(self, cmd, device):
+        res = command(f"{cmd}")
+        return res
     # def __del__(self):
     #     print('卸载App')
     #     # res = command(f"{self.adb} -s {self.device} uninstall {self.package}")

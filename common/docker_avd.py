@@ -31,7 +31,7 @@ class AVD:
     def get_mapping_port(self, container_id):
         port_mapping = command(f"docker port {self.container_id}")
         print(port_mapping)
-        port_list = findall("0\.0\.0\.0:(\d*)", port_mapping)
+        port_list = findall("5555/tcp -> 0\.0\.0\.0:(\d*)", port_mapping)
         print(port_list)
         print(type(port_list))
         return port_list

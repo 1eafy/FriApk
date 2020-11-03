@@ -135,12 +135,25 @@ class FriApk:
         a1 = AVD()
         a1.new_avd()
         port_list = a1.get_mapping_port(a1.container_id)
+        res = ""
+        adb = ADB()
         for port in port_list:
-            adb = ADB()
             status, res = adb.connect_network("0.0.0.0", port)
             if status: break
         print(res)
-        print("hahahah")
+        import time
+        start_time = time.time()
+        while 1:
+            e = adb.adb_shell("adb devices", adb.device)
+            print(e)
+            #if '0.0.0.0' in res:
+             #   if 'offline' in res: 
+             #       continue
+             #   else:
+              #      break
+        end_time = time.time()
+        print(e)
+        print('over..., ',end_time-start_time)
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.install(self.apk_filename, device)
