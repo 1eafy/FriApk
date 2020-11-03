@@ -30,6 +30,7 @@ class AVD:
 
     def get_mapping_port(self, container_id):
         port_mapping = command(f"docker port {self.container_name}")
+        print(port_mapping)
         port_list = findall("0\.0\.0\.0:(\d*)", port_mapping)
         print(port_list)
         print(type(port_list))
@@ -51,6 +52,8 @@ class AVD:
 
     def __del__(self):
         print("stop container and rm container ?????")
+        self.stop_container(self.container_id)
+        self.rm_container(self.container_id)
 
 
 # if __name__ == '__main__':

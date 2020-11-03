@@ -1,3 +1,6 @@
 networkx == 2.5
 asn1crypto == 1.4.0
 frida == 12.11.17
+colorama == 0.4.3
+lxml == 4.4.1
+click == 7.1.2
