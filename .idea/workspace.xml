@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/docker_avd.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/docker_avd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +56,7 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -294,7 +277,7 @@
       <workItem from="1604280245927" duration="2781000" />
       <workItem from="1604316896131" duration="809000" />
       <workItem from="1604320419642" duration="3242000" />
-      <workItem from="1604367994802" duration="6675000" />
+      <workItem from="1604367994802" duration="8617000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -359,7 +342,28 @@
       <option name="project" value="LOCAL" />
       <updated>1604391447746</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Linux Test AVD and ADB.">
+      <created>1604392215675</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604392215675</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Linux Test AVD and ADB.">
+      <created>1604392325785</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604392325785</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Linux Test AVD and ADB.">
+      <created>1604392388021</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1604392388021</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,19 +374,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="develop" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -422,10 +414,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604367993924" />
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604391446400">
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604392386996">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604391446400" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604392386996" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -487,17 +479,18 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604391449920">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604392967994">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604391449920" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604392967994" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1549.871@0.0.1549.871" timestamp="1603100639539" />
-    <state x="744" y="402" width="430" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603768837686">
-      <screen x="0" y="31" width="1918" height="910" />
+    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604393816748">
+      <screen x="0" y="0" width="1549" height="871" />
     </state>
+    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1549.871@0.0.1549.871" timestamp="1604393816748" />
     <state x="744" y="402" width="430" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.31.1918.910@0.31.1918.910" timestamp="1603768837686" />
     <state x="550" y="148" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603158944595">
       <screen x="0" y="0" width="1549" height="871" />
