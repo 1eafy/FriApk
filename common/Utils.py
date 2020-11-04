@@ -9,4 +9,3 @@ def command(cmd, encoding="UTF-8"):
         return result_text
     except Exception as e:
         print(f"[Error] Command execution error")
-        print("#####################子洋天下无敌！！！！！！！！！！！！！！！！！")

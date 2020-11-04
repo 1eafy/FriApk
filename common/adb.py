@@ -67,7 +67,7 @@ class ADB:
         print(res)
 
     def adb_shell(self, cmd, device):
-        res = command(f"{cmd}")
+        res = command(f"{self.adb} {cmd}")
         return res
     # def __del__(self):
     #     print('卸载App')

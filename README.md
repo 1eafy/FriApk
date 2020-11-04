@@ -1,5 +1,5 @@
 # FriApk
-> 基于Frida、androguard，联动安卓模拟器脱壳，进行静态、动态漏洞检测工具，非法获取用户设备、敏感信息行为检测（猜想）
+> 基于Frida、Androguard，联动Android emulator脱壳，进行静态、动态漏洞检测工具，非法获取用户设备、敏感信息行为检测（猜想）
 
 ### requirements.txt
 ```
@@ -16,4 +16,7 @@ pip安装frida的时候耗时比较长 请耐心等待
 - [androguard](https://github.com/androguard/androguard)
 - [apkscanner](https://github.com/gremwell/apkscanner)
 - [AndroidChecklist](https://github.com/guanchao/AndroidChecklist)
+- [Android软件安全与逆向分析](https://bbs.pediy.com/forum-168.htm)
 - ...
+
+Blog: [https://icheung.net](https://icheung.net)

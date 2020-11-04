@@ -5,6 +5,7 @@ from androguard.core.androconf import *
 from importlib import util, import_module
 from common.protect import *
 from common.adb import ADB
+from common.Utils import *
 from common.docker_avd import AVD
 from base import DEXDump
 import threading
@@ -51,7 +52,7 @@ class FriApk:
 
     def load_modules(self):
         for root, _, files in list(os.walk("module"))[1:]:
-            root = root.replace("\\", "/")
+            root = root.replace("\\", os.path.sep)
             module_type = findall(r"module/(.*)", root)[0]
             if len(files):
                 self.modules[module_type] = ['.'.join(['module', module_type, m[:-3]]) for m in files if
@@ -135,25 +136,14 @@ class FriApk:
         a1 = AVD()
         a1.new_avd()
         port_list = a1.get_mapping_port(a1.container_id)
-        res = ""
+        # res = ""
         adb = ADB()
         for port in port_list:
             status, res = adb.connect_network("0.0.0.0", port)
             if status: break
-        print(res)
-        import time
-        start_time = time.time()
-        while 1:
-            e = adb.adb_shell("adb devices", adb.device)
-            print(e)
-            #if '0.0.0.0' in res:
-             #   if 'offline' in res: 
-             #       continue
-             #   else:
-              #      break
-        end_time = time.time()
+        # print(res)
+        e = adb.adb_shell("devices", None)
         print(e)
-        print('over..., ',end_time-start_time)
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.install(self.apk_filename, device)
