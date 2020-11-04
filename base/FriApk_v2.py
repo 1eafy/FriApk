@@ -137,13 +137,21 @@ class FriApk:
         a1.new_avd()
         port_list = a1.get_mapping_port(a1.container_id)
         # res = ""
+        import time
+        time.sleep(10)
         adb = ADB()
         for port in port_list:
             status, res = adb.connect_network("0.0.0.0", port)
+            print(res)
             if status: break
         # print(res)
-        e = adb.adb_shell("devices", None)
-        print(e)
+        a = input(">>")
+        for _ in range(20):
+            e = adb.adb_shell("devices", None)
+            print(e)
+            time.sleep(1)
+        adb.install(self.apk_filename, adb.device)
+        a = input(">>")
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.install(self.apk_filename, device)

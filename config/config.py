@@ -10,10 +10,10 @@ BASE_PATH = dirname(dirname(abspath(__file__)))
 JADX_PATH = normcase(join(BASE_PATH, "libs/jadx-1.1.0/bin/jadx.bat")).replace("\\", sep)
 
 # Linux ADB绝对路径
-# ADB_PATH = "adb"
+ADB_PATH = "adb"
 
 # Windows ADB路径
-ADB_PATH = normcase(join(BASE_PATH, "libs/adb.exe")).replace("\\", sep)
+#ADB_PATH = normcase(join(BASE_PATH, "libs/adb.exe")).replace("\\", sep)
 
 # Frida-server在模拟器中的绝对路径
 FRIDA_SERVER_PATH = "/data/local/tmp/frida-server"
