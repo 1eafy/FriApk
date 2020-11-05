@@ -29,53 +29,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/adb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/docker_avd.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/docker_avd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/NOTICE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-clst.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-res.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/animal-sniffer-annotations-1.18.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/annotations-18.0.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-runtime-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/apksig-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/asm-7.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/baksmali-2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/checker-qual-2.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-lang3-3.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-text-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dexlib2-2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dx-1.16.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/error_prone_annotations-2.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/failureaccess-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/gson-2.8.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/guava-28.1-jre.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/image-viewer-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/j2objc-annotations-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-cli-1.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-core-1.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-gui-1.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jcommander-1.78.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jfontchooser-1.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jsr305-3.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/reactive-streams-1.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rsyntaxtextarea-3.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava-2.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava2-swing-0.3.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/slf4j-api-1.7.29.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/smali-2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/stringtemplate-3.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/util-2.3.4.jar" beforeDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -348,7 +301,8 @@
       <workItem from="1604404601768" duration="906000" />
       <workItem from="1604452645837" duration="641000" />
       <workItem from="1604539893111" duration="7393000" />
-      <workItem from="1604562430541" duration="2252000" />
+      <workItem from="1604562430541" duration="4520000" />
+      <workItem from="1604578120396" duration="388000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -455,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604546372997</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add hluwa/FRIDA-DEXDump.">
+      <created>1604566672873</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604566672873</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,10 +479,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604540784820" />
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604546370207">
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604566670021">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604546370207" />
+    <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1604566670021" />
     <state width="173" height="442" key="Diff.GoToChangePopup" timestamp="1603112634369">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -583,10 +544,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="623" y="351" key="VCS.ChangelistChooser/0.0.1549.871@0.0.1549.871" timestamp="1603112735856" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604546377641">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604566675192">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604546377641" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1604566675192" />
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603100639539">
       <screen x="0" y="0" width="1549" height="871" />
     </state>

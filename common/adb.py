@@ -58,9 +58,8 @@ class ADB:
     def start_frida_server(self, frida=FRIDA_SERVER_PATH):
         # 开一个线程启动frida-server
         print('启动Frida')
-        thread = threading.Thread(target=command, args=(f"{self.adb} shell {frida}",))
-        thread.start()
-        # thread.join()
+        res = command(f"""{self.adb} shell 'su 0 "{frida}&"' """)
+        print('------', res)
 
     def kill_server(self):
         res = command(f"{self.adb} kill-server")

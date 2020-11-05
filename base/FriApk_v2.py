@@ -156,16 +156,16 @@ class FriApk:
         print(e)
         if "offline" in e: sleep(5)
 
-        # adb.install(self.apk_filename, adb.device)
-        res = command(f"{ADB_PATH} shell push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
+        adb.install(self.apk_filename, adb.device)
+        res = command(f"{ADB_PATH} push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
         print(res)
         res = command(f"{ADB_PATH} shell 'chmod 777 /data/local/tmp/frida-server-14.0.6-android-arm'")
         print(res)
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
-        # _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
-        # entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=10)
+        adb.start_frida_server()
+        entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=15)
         # f = DEXDump.dumpDex()
 
 
