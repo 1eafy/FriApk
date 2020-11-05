@@ -7,6 +7,7 @@ from common.protect import *
 from common.adb import ADB
 from common.Utils import *
 from common.docker_avd import AVD
+from config.config import ADB_PATH, FRIDA_SERVER_LOCAL_PATH
 from common.dexdump.main import entry
 import threading
 
@@ -154,14 +155,17 @@ class FriApk:
         e = adb.adb_shell("devices", None)
         print(e)
         if "offline" in e: sleep(5)
-        e = adb.adb_shell("devices", None)
-        print(e)
-        adb.install(self.apk_filename, adb.device)
+
+        # adb.install(self.apk_filename, adb.device)
+        res = command(f"{ADB_PATH} shell push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
+        print(res)
+        res = command(f"{ADB_PATH} shell 'chmod 777 /data/local/tmp/frida-server-14.0.6-android-arm'")
+        print(res)
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
-        _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
-        entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=10)
+        # _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
+        # entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=10)
         # f = DEXDump.dumpDex()
 
 

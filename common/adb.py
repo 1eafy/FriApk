@@ -69,6 +69,12 @@ class ADB:
     def adb_shell(self, cmd, device):
         res = command(f"{self.adb} {cmd}")
         return res
+
+
+    def push(self, src_path, dst_path):
+        pass
+
+
     # def __del__(self):
     #     print('卸载App')
     #     # res = command(f"{self.adb} -s {self.device} uninstall {self.package}")

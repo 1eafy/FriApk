@@ -18,6 +18,9 @@ ADB_PATH = "adb"
 # Frida-server在模拟器中的绝对路径
 FRIDA_SERVER_PATH = "/data/local/tmp/frida-server-14.0.6-android-arm"
 
+# Frida-server 在本地路径
+FRIDA_SERVER_LOCAL_PATH = normcase(join(BASE_PATH, "libs/frida-server-14.0.6-android-arm")).replace("\\", sep)
+
 # 脱壳DEX保存路径
 DEX_SAVE_PATH = ""
 
