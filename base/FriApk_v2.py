@@ -7,7 +7,7 @@ from common.protect import *
 from common.adb import ADB
 from common.Utils import *
 from common.docker_avd import AVD
-from base import DEXDump
+from common.dexdump.main import entry
 import threading
 
 class FriApk:
@@ -133,30 +133,35 @@ class FriApk:
         """)
 
     def emulator(self):
+        from time import sleep
+        ip = "0.0.0.0"
         a1 = AVD()
         a1.new_avd()
+        sleep(10)
         port_list = a1.get_mapping_port(a1.container_id)
         # res = ""
         import time
         time.sleep(10)
         adb = ADB()
         for port in port_list:
-            status, res = adb.connect_network("0.0.0.0", port)
+            status, res = adb.connect_network(ip, port)
             print(res)
             if status: break
-        # print(res)
-        a = input(">>")
-        for _ in range(20):
-            e = adb.adb_shell("devices", None)
-            print(e)
-            time.sleep(1)
+
+        # sleep 1 min, wait for devices wakeup
+        sleep(60)
+
+        e = adb.adb_shell("devices", None)
+        print(e)
+        if "offline" in e: sleep(5)
+        e = adb.adb_shell("devices", None)
+        print(e)
         adb.install(self.apk_filename, adb.device)
-        a = input(">>")
         # device = adb.get_devices()[0]
         # adb.set_device(device)
-        # adb.install(self.apk_filename, device)
         # adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
-        # _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
+        _ = adb.start_frida_server()  # 启动frida-server 会返回一个线程对象
+        entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=10)
         # f = DEXDump.dumpDex()
 
 

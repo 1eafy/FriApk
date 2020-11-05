@@ -13,9 +13,10 @@ click == 7.1.2
 pip安装frida的时候耗时比较长 请耐心等待
 ###### **注: frida版本与模拟器的frida-server版本尽量需要对应上**
 # 参考
-- [androguard](https://github.com/androguard/androguard)
+- [Androguard](https://github.com/androguard/androguard)
 - [apkscanner](https://github.com/gremwell/apkscanner)
 - [AndroidChecklist](https://github.com/guanchao/AndroidChecklist)
+- [AndroidSecurityStudy](https://github.com/r0ysue/AndroidSecurityStudy)
 - [Android软件安全与逆向分析](https://bbs.pediy.com/forum-168.htm)
 - ...
 

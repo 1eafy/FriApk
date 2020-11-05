@@ -4,3 +4,4 @@ frida == 12.11.17
 colorama == 0.4.3
 lxml == 4.4.1
 click == 7.1.2
+frida-dexdump == 1.0.2

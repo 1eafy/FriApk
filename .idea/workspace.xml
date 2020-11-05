@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand />
-    <select>
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:develop" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/base/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/dexdump/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/dexdump/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fridaDump_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/DEXDump.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/adb.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/adb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/agent.js" beforeDir="false" afterPath="$PROJECT_DIR$/common/dexdump/agent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +95,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -84,20 +107,20 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Python\FriApk\common" />
+      <recent name="F:\Python\FriApk\base" />
+      <recent name="F:\Python\FriApk" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Python\FriApk\test" />
       <recent name="F:\Python\FriApk\libs" />
       <recent name="F:\Python\FriApk\base" />
       <recent name="F:\Python\FriApk\libs\jadx" />
       <recent name="F:\Python\FriApk" />
-      <recent name="F:\Python\FriApk\tools" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Python\FriApk" />
-      <recent name="F:\Python\FriApk\common" />
-      <recent name="F:\Python\FriApk\base" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.docker_avd">
+  <component name="RunManager" selected="Python.fridaDump_test">
     <configuration name="DEXDump" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FriApk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,28 +135,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="F:\Python\FriApk\base\DEXDump.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="FriApk_v2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="FriApk" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/FriApk_v2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,6 +187,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="fridaDump_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FriApk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/fridaDump_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FriApk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,17 +234,17 @@
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.config" />
-      <item itemvalue="Python.FriApk_v2" />
       <item itemvalue="Python.DEXDump" />
       <item itemvalue="Python.docker_avd" />
+      <item itemvalue="Python.fridaDump_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fridaDump_test" />
         <item itemvalue="Python.docker_avd" />
         <item itemvalue="Python.DEXDump" />
         <item itemvalue="Python.config" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.FriApk_v2" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +311,7 @@
       <workItem from="1604367994802" duration="10200000" />
       <workItem from="1604404601768" duration="906000" />
       <workItem from="1604452645837" duration="641000" />
+      <workItem from="1604539893111" duration="5441000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -393,6 +417,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -435,10 +469,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="538" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.871@0.0.1549.871" timestamp="1603941908644" />
-    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604367993924">
+    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1604540784820">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604367993924" />
+    <state x="455" y="171" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1549.871@0.0.1549.871" timestamp="1604540784820" />
     <state x="227" y="7" width="959" height="864" key="CommitChangelistDialog2" timestamp="1604394520167">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -463,22 +497,22 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="584" y="141" key="Github.UntrackedFilesDialog/0.0.1549.871@0.0.1549.871" timestamp="1603098347444" />
-    <state width="1506" height="146" key="GridCell.Tab.0.bottom" timestamp="1604402576679">
+    <state width="1506" height="146" key="GridCell.Tab.0.bottom" timestamp="1604501395054">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="146" key="GridCell.Tab.0.bottom/0.0.1549.871@0.0.1549.871" timestamp="1604402576679" />
-    <state width="1506" height="146" key="GridCell.Tab.0.center" timestamp="1604402576677">
+    <state width="1506" height="146" key="GridCell.Tab.0.bottom/0.0.1549.871@0.0.1549.871" timestamp="1604501395054" />
+    <state width="1506" height="146" key="GridCell.Tab.0.center" timestamp="1604501395053">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="146" key="GridCell.Tab.0.center/0.0.1549.871@0.0.1549.871" timestamp="1604402576677" />
-    <state width="1506" height="146" key="GridCell.Tab.0.left" timestamp="1604402576674">
+    <state width="1506" height="146" key="GridCell.Tab.0.center/0.0.1549.871@0.0.1549.871" timestamp="1604501395053" />
+    <state width="1506" height="146" key="GridCell.Tab.0.left" timestamp="1604501395053">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="146" key="GridCell.Tab.0.left/0.0.1549.871@0.0.1549.871" timestamp="1604402576674" />
-    <state width="1506" height="146" key="GridCell.Tab.0.right" timestamp="1604402576679">
+    <state width="1506" height="146" key="GridCell.Tab.0.left/0.0.1549.871@0.0.1549.871" timestamp="1604501395053" />
+    <state width="1506" height="146" key="GridCell.Tab.0.right" timestamp="1604501395054">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="146" key="GridCell.Tab.0.right/0.0.1549.871@0.0.1549.871" timestamp="1604402576679" />
+    <state width="1506" height="146" key="GridCell.Tab.0.right/0.0.1549.871@0.0.1549.871" timestamp="1604501395054" />
     <state width="1506" height="280" key="GridCell.Tab.1.bottom" timestamp="1603978830766">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -495,10 +529,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state width="1506" height="280" key="GridCell.Tab.1.right/0.0.1549.871@0.0.1549.871" timestamp="1603978830766" />
-    <state x="140" y="161" width="1022" height="733" key="SettingsEditor" timestamp="1603956722647">
+    <state x="412" y="131" width="981" height="713" key="SettingsEditor" timestamp="1604542793124">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="140" y="161" key="SettingsEditor/0.0.1549.871@0.0.1549.871" timestamp="1603956722647" />
+    <state x="412" y="131" width="981" height="713" key="SettingsEditor/0.0.1549.871@0.0.1549.871" timestamp="1604542793124" />
     <state x="667" y="165" width="1022" height="733" key="SettingsEditor/0.31.1918.910@0.31.1918.910" timestamp="1603768891718" />
     <state x="623" y="351" key="VCS.ChangelistChooser" timestamp="1603112735856">
       <screen x="0" y="0" width="1549" height="871" />
@@ -512,10 +546,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="325" y="38" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1549.871@0.0.1549.871" timestamp="1603100639539" />
-    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604402022313">
+    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604486769489">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1549.871@0.0.1549.871" timestamp="1604402022313" />
+    <state x="601" y="355" width="369" height="172" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1549.871@0.0.1549.871" timestamp="1604486769489" />
     <state x="744" y="402" width="430" height="175" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.31.1918.910@0.31.1918.910" timestamp="1603768837686" />
     <state x="550" y="148" key="git4idea.branch.GitSmartOperationDialog" timestamp="1603158944595">
       <screen x="0" y="0" width="1549" height="871" />
@@ -525,10 +559,10 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="631" y="326" width="556" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1549.871@0.0.1549.871" timestamp="1603272545973" />
-    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1604371054066">
+    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup" timestamp="1604542926258">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1549.871@0.0.1549.871" timestamp="1604371054066" />
+    <state x="666" y="190" width="672" height="678" key="search.everywhere.popup/0.0.1549.871@0.0.1549.871" timestamp="1604542926258" />
     <state x="582" y="120" key="svn.repositoryBrowser" timestamp="1603098283747">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -555,6 +589,7 @@
     <SUITE FILE_PATH="coverage/FriApk$docker_avd.coverage" NAME="docker-avd Coverage Results" MODIFIED="1604372085840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/FriApk$IntentSchemeURL.coverage" NAME="IntentSchemeURL Coverage Results" MODIFIED="1603362374018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module/ASBC" />
     <SUITE FILE_PATH="coverage/FriApk$adb.coverage" NAME="adb Coverage Results" MODIFIED="1603937459327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
+    <SUITE FILE_PATH="coverage/FriApk$fridaDump_test.coverage" NAME="fridaDump_test Coverage Results" MODIFIED="1604543017730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/FriApk$util.coverage" NAME="util Coverage Results" MODIFIED="1602989914322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/androguard" />
     <SUITE FILE_PATH="coverage/FriApk$sdfa.coverage" NAME="sdfa Coverage Results" MODIFIED="1602759098450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
   </component>
