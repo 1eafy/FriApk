@@ -155,7 +155,6 @@ class FriApk:
         e = adb.adb_shell("devices", None)
         print(e)
         if "offline" in e: sleep(5)
-
         adb.install(self.apk_filename, adb.device)
         res = command(f"{ADB_PATH} push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
         print(res)
