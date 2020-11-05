@@ -16,7 +16,7 @@ class AVD:
         :return:
         """
         self.container_name = self._get_uuid()
-        print(f"docker run -d -P --name {self.container_name} android-emulator-frida")
+        print(f"docker run -d -P --name {self.container_name} android-emulator")
         self.container_id = command(f"docker run -d -P --name {self._get_uuid()} netdodo/android-emulator")
         print(self.container_id)
 

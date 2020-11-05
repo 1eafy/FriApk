@@ -58,7 +58,7 @@ class ADB:
     def start_frida_server(self, frida=FRIDA_SERVER_PATH):
         # 开一个线程启动frida-server
         print('启动Frida')
-        res = command(f"""{self.adb} shell 'su 0 "{frida}&"' """)
+        res = command(f'{self.adb} shell su 0 "{frida}&"', read_rev=False)
         print('------', res)
 
     def kill_server(self):
