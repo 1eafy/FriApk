@@ -21,3 +21,6 @@ pip安装frida的时候耗时比较长 请耐心等待
 - ...
 
 Blog: [https://icheung.net](https://icheung.net)
+
+问题
+1. Apk路径不能有空格

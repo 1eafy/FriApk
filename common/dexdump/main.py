@@ -11,6 +11,8 @@ import frida
 import logging
 import traceback
 
+from config.config import DEX_SAVE_PATH
+
 try:
     from shutil import get_terminal_size as get_terminal_size
 except:
@@ -119,10 +121,14 @@ def dump(pkg_name, api, mds=None):
                 click.secho("[DEXDump]: Skip duplicate dex {}<{}>".format(info['addr'], md), fg="blue")
                 continue
             mds.append(md)
-            if not os.path.exists("./" + pkg_name + "/"):
-                os.mkdir("./" + pkg_name + "/")
+            # if not os.path.exists("./" + pkg_name + "/"):
+            #     os.mkdir("./" + pkg_name + "/")
+            dex_data_path = os.path.join(DEX_SAVE_PATH, pkg_name)
+            if not os.path.exists(dex_data_path):
+                os.mkdir(dex_data_path)
             bs = dex_fix(bs)
-            with open(pkg_name + "/" + info['addr'] + ".dex", 'wb') as out:
+            # with open(pkg_name + "/" + info['addr'] + ".dex", 'wb') as out:
+            with open(os.path.join(dex_data_path, info['addr'] + ".dex"), 'wb') as out:
                 out.write(bs)
             click.secho("[DEXDump]: DexSize={}, DexMd5={}, SavePath={}/{}/{}.dex"
                         .format(hex(info['size']), md, os.getcwd(), pkg_name, info['addr']), fg='green')
@@ -134,9 +140,9 @@ def stop_other(pid, processes):
     try:
         for process in processes:
             if process.pid == pid:
-                os.system("adb shell su 0 'kill -18 {}'".format(process.pid))
+                os.system('adb shell "kill -18 {}"'.format(process.pid))
             else:
-                os.system("adb shell su 0 'kill -19 {}'".format(process.pid))
+                os.system('adb shell "kill -19 {}"'.format(process.pid))
     except:
         pass
 
@@ -180,15 +186,13 @@ def show_help():
 def connect_device():
     try:
         device = frida.get_usb_device()
-
     except:
         device = frida.get_remote_device()
 
     return device
 
 
-def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enable_deep_search=False,
-          forward_port=None):
+def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enable_deep_search=False,):
     # show_banner()
 
     # process = None
@@ -197,14 +201,14 @@ def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enab
     # delay_second = 10
     # enable_deep_search = False
 
-    try:
+    # try:
         # opts, args = getopt.getopt(sys.argv[1:], "hn:p:fs:d")
 
-        def arg2int(v):
-            try:
-                return int(v)
-            except:
-                return int(v.replace('0x', ''), 16)
+        # def arg2int(v):
+        #     try:
+        #         return int(v)
+        #     except:
+        #         return int(v.replace('0x', ''), 16)
 
         # for arg, value in opts:
         #     if arg == '-n':
@@ -221,21 +225,20 @@ def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enab
         #         show_help()
         #         exit(0)
 
-    except getopt.GetoptError:
-        # show_help()
-        exit(2)
+    # except getopt.GetoptError:
+    #     # show_help()
+    #     exit(2)
 
     if enable_spawn_mode and pid is not None:
         pid = None
 
     def forward_frida():
-        p_2 = forward_port['forward_2'] if forward_port else 27042
-        p_3 = forward_port['forward_3'] if forward_port else 27043
-        os.system(f"adb forward tcp:27042 tcp:{p_2}")
-        os.system(f"adb forward tcp:27043 tcp:{p_3}")
+        os.system(f"adb forward tcp:27042 tcp:27042")
+        os.system(f"adb forward tcp:27043 tcp:27043")
 
     try:
         device = connect_device()
+        print(device)
         if not device:
             raise Exception("Unable to connect.")
     except:

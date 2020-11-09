@@ -23,7 +23,7 @@ FRIDA_SERVER_PATH = "/data/local/tmp/frida-server"
 FRIDA_SERVER_LOCAL_PATH = normcase(join(BASE_PATH, "libs/frida-server")).replace("\\", sep)
 
 # 脱壳DEX保存路径
-DEX_SAVE_PATH = ""
+DEX_SAVE_PATH = normcase(join(BASE_PATH, "data")).replace("\\", sep)
 
 # 创建最多docker容器
 CONTAINER_MAX = 3

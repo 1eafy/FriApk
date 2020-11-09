@@ -5,15 +5,13 @@ from androguard.core.androconf import *
 from importlib import util, import_module
 from common.protect import *
 from common.adb import ADB
-from common.Utils import *
-from common.docker_avd import AVD
-from config.config import ADB_PATH, FRIDA_SERVER_LOCAL_PATH
+
 from common.dexdump.main import entry
-import threading
+
 
 class FriApk:
     def __init__(self, args):
-        self.apk_filename = args
+        self.apk_filename = args.apk
         self.apk = None
         self.all_permission = []
         self.danger_permission = []
@@ -43,13 +41,39 @@ class FriApk:
                     self.is_protect, self.protect_type = self.get_protect_and_type()
 
                     # self.show_apk_info()
-                    self.emulator()
+                    if self.is_protect:
+                        pass
+                        # self.emulator()
+                    self.init_Dv()
                     # self.load_modules()
                     # self.show_certificate()
             else:
                 printRed("[!] File is not APK.")
         else:
             printRed("[!] No Found File.")
+
+    def init_Dv(self):
+        from androguard.core.bytecodes import dvm
+        from androguard.decompiler.dad.decompile import DvMethod
+        from androguard.core.analysis.analysis import Analysis
+        from pprint import pprint as pp
+        from androguard.decompiler.decompiler import DecompilerJADX
+        from config.config import JADX_PATH
+        from config.config import DEX_SAVE_PATH
+
+        dx = Analysis()
+        for dex in self.apk.get_all_dex():
+            d = dvm.DalvikVMFormat(dex)
+            dx.add(d)
+        for root, dir_name, file_list in os.walk(os.path.join(DEX_SAVE_PATH, self.apk.get_package())):
+            for f in file_list:
+                print(os.path.join(root, f))
+                with open(os.path.join(root, f), 'rb') as file:
+                    d = dvm.DalvikVMFormat(file.read())
+                    dx.add(d)
+        for i in dx.get_strings():
+            print(i)
+
 
     def load_modules(self):
         for root, _, files in list(os.walk("module"))[1:]:
@@ -73,10 +97,10 @@ class FriApk:
                         print(f'{module_res.content}')
                         if module_res.poc:
                             printGreen("\t[+] POC")
-                            print(module_res.poc+"\n")
+                            print(module_res.poc + "\n")
                         if module_res.suggestion:
                             printGreen("\t[+] 修复建议:")
-                            print(module_res.suggestion+"\n")
+                            print(module_res.suggestion + "\n")
                     # except Exception as e:
                     #     print(f" [!] Load {m} Error.", e)
                     self.modules_load.append(m)
@@ -92,7 +116,8 @@ class FriApk:
         print(f"[?] Check Module")
         module_spec = util.find_spec(module)
         # print(f"module_spec={module_spec}")
-        if not module_spec: print(f"[×] Module: {module} not found.")
+        if not module_spec:
+            print(f"[×] Module: {module} not found.")
         # pass
         else:
             print(f"[√] Module: {module} can be imported.")
@@ -134,42 +159,29 @@ class FriApk:
         """)
 
     def emulator(self):
-        from time import sleep
-        ip = "0.0.0.0"
-        a1 = AVD()
-        a1.new_avd()
-        sleep(10)
-        port_list, forward_port = a1.get_mapping_port(a1.container_id)
-        # res = ""
-        # import time
-        # time.sleep(10)
         adb = ADB()
-        # for port in port_list:
-        #     status, res = adb.connect_network(ip, port)
-        #     print(res)
-        #     if status: break
-
-        # sleep 1 min, wait for devices wakeup
-        # sleep(60)
-        # e = adb.adb_shell("devices", None)
-        # print(e)
-        # if "offline" in e: sleep(5)
-        # res = command(f"{ADB_PATH} push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
-        # print(res)
-        # res = command(f"{ADB_PATH} shell 'chmod 777 /data/local/tmp/frida-server'")
-        # print(res)
-        # device = adb.get_devices()[0]
-        # adb.set_device(device)
-        # adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
-        # sleep(15)
-        device = adb.get_devices()[0]
+        print('[+] 该应用存在加固, 正在尝试脱壳.')
+        print('[+] 请启动安卓模拟器, 程序尝试自动启动Frida-server守护进程')
+        input('[*] 准备完成请按回车键: ')
+        devices = adb.get_devices()
+        device_num = 0
+        if len(devices) > 1:
+            for i, d in enumerate(devices): print(f"{i}. {d}")
+            device_num = input('[!] 存在多个设备, 请选择: ').strip()
+        print(type(device_num), device_num)
+        try:
+            device = devices[int(device_num)]
+        except Exception:
+            printRed('[!] 输入有误! 自动退出.')
+            exit(1)
         adb.set_device(device)
-
-        adb.install(self.apk_filename, adb.device)
         adb.start_frida_server()
-        # sleep(15)
-        print('dexDump...')
-        entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=30, forward_port=forward_port)
-        # f = DEXDump.dumpDex()
-
-
+        frida_server_status = adb.check_frida_server()
+        if frida_server_status:
+            print('[+] Frida-server 启动成功')
+            print('[INFO] 正在安装应用...')
+            if adb.install(self.apk_filename, self.apk.get_package()):
+                print('[+] 安装成功')
+                print('[INFO] 尝试脱壳...')
+                adb.package = self.apk.get_package()
+                entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=5)
