@@ -12,11 +12,12 @@ class ADB:
         self.devices = []
         self.package = ""
         self.SIGSTOP = True
-        #if self._exists_adb():
-        #    res = command(f"{ADB_PATH} devices", encoding="gbk")
-        #    self.devices = re.findall("(.*)\sdevice\s", res)
-        #else:
-        #    raise FileNotFoundError
+        self.device = ""
+        if self._exists_adb():
+           res = command(f"{ADB_PATH} devices", encoding="gbk")
+           self.devices = re.findall("(.*)\sdevice\s", res)
+        else:
+           raise FileNotFoundError
 
     def _exists_adb(self):
         """
@@ -38,8 +39,8 @@ class ADB:
         :param device:
         :return:
         """
-
-        res = command(f"{self.adb} -s {device} install {apk_path}", encoding="gbk")
+        c = f"{self.adb} -s {self.device} install {apk_path}"
+        res = command(c, encoding="gbk")
         print(res)
 
     def connect_network(self, ip, port='5555'):
@@ -56,10 +57,9 @@ class ADB:
         self.device = device
 
     def start_frida_server(self, frida=FRIDA_SERVER_PATH):
-        # 开一个线程启动frida-server
-        print('启动Frida')
-        res = command(f"""{self.adb} shell 'su 0 "{frida}&"' """)
-        print('------', res)
+        print('启动frida-server')
+        command(f'{self.adb} shell su 0 "{frida}"', read_rev=False)
+        print('frida-server已启动...')
 
     def kill_server(self):
         res = command(f"{self.adb} kill-server")

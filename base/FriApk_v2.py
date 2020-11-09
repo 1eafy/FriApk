@@ -13,7 +13,7 @@ import threading
 
 class FriApk:
     def __init__(self, args):
-        self.apk_filename = args.apk
+        self.apk_filename = args
         self.apk = None
         self.all_permission = []
         self.danger_permission = []
@@ -139,32 +139,37 @@ class FriApk:
         a1 = AVD()
         a1.new_avd()
         sleep(10)
-        port_list = a1.get_mapping_port(a1.container_id)
+        port_list, forward_port = a1.get_mapping_port(a1.container_id)
         # res = ""
-        import time
-        time.sleep(10)
+        # import time
+        # time.sleep(10)
         adb = ADB()
-        for port in port_list:
-            status, res = adb.connect_network(ip, port)
-            print(res)
-            if status: break
+        # for port in port_list:
+        #     status, res = adb.connect_network(ip, port)
+        #     print(res)
+        #     if status: break
 
         # sleep 1 min, wait for devices wakeup
-        sleep(60)
-
-        e = adb.adb_shell("devices", None)
-        print(e)
-        if "offline" in e: sleep(5)
-        adb.install(self.apk_filename, adb.device)
-        res = command(f"{ADB_PATH} push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
-        print(res)
-        res = command(f"{ADB_PATH} shell 'chmod 777 /data/local/tmp/frida-server-14.0.6-android-arm'")
-        print(res)
+        # sleep(60)
+        # e = adb.adb_shell("devices", None)
+        # print(e)
+        # if "offline" in e: sleep(5)
+        # res = command(f"{ADB_PATH} push {FRIDA_SERVER_LOCAL_PATH} /data/local/tmp")
+        # print(res)
+        # res = command(f"{ADB_PATH} shell 'chmod 777 /data/local/tmp/frida-server'")
+        # print(res)
         # device = adb.get_devices()[0]
         # adb.set_device(device)
         # adb.start_app(device, self.apk.get_package(), self.apk.get_main_activity())
+        # sleep(15)
+        device = adb.get_devices()[0]
+        adb.set_device(device)
+
+        adb.install(self.apk_filename, adb.device)
         adb.start_frida_server()
-        entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=15)
+        # sleep(15)
+        print('dexDump...')
+        entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=30, forward_port=forward_port)
         # f = DEXDump.dumpDex()
 
 

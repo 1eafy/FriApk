@@ -30,11 +30,14 @@ class AVD:
 
     def get_mapping_port(self, container_id):
         port_mapping = command(f"docker port {self.container_id}")
+        forward_port = {}
         print(port_mapping)
         port_list = findall("5555/tcp -> 0\.0\.0\.0:(\d*)", port_mapping)
+        forward_port['forward_2'] = findall("27042/tcp -> 0\.0\.0\.0:(\d*)", port_mapping)[0]
+        forward_port['forward_3'] = findall("27043/tcp -> 0\.0\.0\.0:(\d*)", port_mapping)[0]
         print(port_list)
         print(type(port_list))
-        return port_list
+        return port_list, forward_port
 
     def stop_container(self, container_id_or_name):
         print("stop container...")
