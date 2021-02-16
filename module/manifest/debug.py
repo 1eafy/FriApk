@@ -11,7 +11,6 @@ class Module:
             "Description": "检测应用是否允许被调试",
             "Reference": [
                 "http://01hackcode.com/wiki/6.6",
-
             ],
         }
         self.status = False
@@ -19,6 +18,7 @@ class Module:
 
     def run(self):
 
+        # 获取debuggable属性值
         allow_debug = self.apk.get_attribute_value("application", "debuggable")
 
         level = INFO
@@ -29,7 +29,6 @@ class Module:
         if allow_debug and allow_debug.lower() == "true":
             level = HIGH
             poc = None
-
             suggestion = f"\t{RED}设置AndroidManifest.xml的debuggable标志为false{END}"
 
 

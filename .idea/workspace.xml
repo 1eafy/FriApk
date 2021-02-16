@@ -225,10 +225,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.DEXDump" />
       <item itemvalue="Python.docker_avd" />
       <item itemvalue="Python.fridaDump_test" />
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
