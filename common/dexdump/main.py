@@ -128,10 +128,11 @@ def dump(pkg_name, api, mds=None):
                 os.mkdir(dex_data_path)
             bs = dex_fix(bs)
             # with open(pkg_name + "/" + info['addr'] + ".dex", 'wb') as out:
-            with open(os.path.join(dex_data_path, info['addr'] + ".dex"), 'wb') as out:
-                out.write(bs)
-            click.secho("[DEXDump]: DexSize={}, DexMd5={}, SavePath={}/{}/{}.dex"
-                        .format(hex(info['size']), md, os.getcwd(), pkg_name, info['addr']), fg='green')
+            if info['size'] > 4096:
+                with open(os.path.join(dex_data_path, info['addr'] + ".dex"), 'wb') as out:
+                    out.write(bs)
+                click.secho("[DEXDump]: DexSize={}, DexMd5={}, SavePath={}/{}/{}.dex"
+                            .format(info['size'], md, os.getcwd(), pkg_name, info['addr']), fg='green')
         except Exception as e:
             click.secho("[Except] - {}: {}".format(e, info), bg='yellow')
 
@@ -140,9 +141,9 @@ def stop_other(pid, processes):
     try:
         for process in processes:
             if process.pid == pid:
-                os.system('adb shell "kill -18 {}"'.format(process.pid))
+                os.system('adb shell "su -c kill -18 {}"'.format(process.pid))
             else:
-                os.system('adb shell "kill -19 {}"'.format(process.pid))
+                os.system('adb shell "su -c kill -19 {}"'.format(process.pid))
     except:
         pass
 
@@ -238,7 +239,6 @@ def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enab
 
     try:
         device = connect_device()
-        print(device)
         if not device:
             raise Exception("Unable to connect.")
     except:

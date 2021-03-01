@@ -46,7 +46,7 @@ class ADB:
             self.package = package_name
             if package_name in self.package_list:
                 print('[!] 软件已存在该设备, 跳过安装')
-                return False
+                return True
             c = f"{self.adb} -s {self.device} install {apk_path}"
             res = command(c, encoding="gbk")
             return 'Success' in res
@@ -69,7 +69,7 @@ class ADB:
 
     def start_frida_server(self, frida=FRIDA_SERVER_PATH):
         print('启动frida-server')
-        command(f'{self.adb} -s {self.device} shell su 0 "{frida}"', read_rev=False)
+        command(f'{self.adb} -s {self.device} shell "su -c {frida}"', read_rev=False)
 
     def kill_server(self):
         res = command(f"{self.adb} kill-server")

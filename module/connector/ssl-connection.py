@@ -2,8 +2,9 @@ from common.Vulnerability import *
 from common.PrintUtils import *
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, dx=None):
         self.apk = apk
+        self.dx = dx
         self.module_info = {
             "Name": "SSL Connection",
             "Author": "xxx",

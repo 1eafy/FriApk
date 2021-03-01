@@ -17,7 +17,7 @@ class FriApk:
         self.danger_permission = []
         self.modules = {}
         self.modules_load = []
-
+        self.dx = None
         self.is_protect = False
         self.protect_type = ""
         # self._only_static_analyze = args.static_only
@@ -44,9 +44,11 @@ class FriApk:
                     if self.is_protect:
                         pass
                         # self.emulator()
-                    self.init_Dv()
-                    # self.load_modules()
+                        # dx = self.init_Dv()
+                    self.load_modules()
                     # self.show_certificate()
+                    # with open('icon.png', 'wb') as f:
+                    #     f.write(self.apk.get_file(self.apk.get_app_icon()))
             else:
                 printRed("[!] File is not APK.")
         else:
@@ -56,29 +58,38 @@ class FriApk:
         from androguard.core.bytecodes import dvm
         from androguard.decompiler.dad.decompile import DvMethod
         from androguard.core.analysis.analysis import Analysis
+        from androguard.core.analysis import analysis
         from pprint import pprint as pp
         from androguard.decompiler.decompiler import DecompilerJADX
         from config.config import JADX_PATH
         from config.config import DEX_SAVE_PATH
+        from common.fix_v1 import fix_dex_header
 
         dx = Analysis()
-        for dex in self.apk.get_all_dex():
-            d = dvm.DalvikVMFormat(dex)
-            dx.add(d)
+        # for dex in self.apk.get_all_dex():
+        #     d = dvm.DalvikVMFormat(dex)
+        #     dx.add(d)
+
         for root, dir_name, file_list in os.walk(os.path.join(DEX_SAVE_PATH, self.apk.get_package())):
             for f in file_list:
+                fix_dex_header(os.path.join(root, f))
                 print(os.path.join(root, f))
                 with open(os.path.join(root, f), 'rb') as file:
-                    d = dvm.DalvikVMFormat(file.read())
-                    dx.add(d)
-        for i in dx.get_strings():
-            print(i)
+                    try:
+                        d = dvm.DalvikVMFormat(file.read())
+                        dx.add(d)
+                    except Exception:
+                        printRed("[ERROR] {}".format(os.path.join(root, f)))
+
+                    # for i in dx.get_classes():
+                    #     print(i)
+        self.dx = dx
 
 
     def load_modules(self):
         for root, _, files in list(os.walk("module"))[1:]:
-            root = root.replace("\\", os.path.sep)
-            module_type = findall(r"module/(.*)", root)[0]
+            root = root.replace("\\", os.path.sep).replace("/", os.path.sep)
+            module_type = findall("module/|\\\(.*)", root)[0]
             if len(files):
                 self.modules[module_type] = ['.'.join(['module', module_type, m[:-3]]) for m in files if
                                              m.endswith('py')]
@@ -113,15 +124,16 @@ class FriApk:
         :return: module spec
         """
 
-        print(f"[?] Check Module")
+        # print(f"[?] Check Module")
         module_spec = util.find_spec(module)
         # print(f"module_spec={module_spec}")
         if not module_spec:
             print(f"[×] Module: {module} not found.")
         # pass
         else:
-            print(f"[√] Module: {module} can be imported.")
-            print(f"[*] Loading {module} Module ...")
+            pass
+            # print(f"[√] Module: {module} can be imported.")
+            # print(f"[*] Loading {module} Module ...")
         # else:
         # print(f"[×] Module: {module} not found.")
         return module_spec
@@ -168,7 +180,7 @@ class FriApk:
         if len(devices) > 1:
             for i, d in enumerate(devices): print(f"{i}. {d}")
             device_num = input('[!] 存在多个设备, 请选择: ').strip()
-        print(type(device_num), device_num)
+        # print(type(device_num), device_num)
         try:
             device = devices[int(device_num)]
         except Exception:
@@ -176,6 +188,7 @@ class FriApk:
             exit(1)
         adb.set_device(device)
         adb.start_frida_server()
+        # exit(1)
         frida_server_status = adb.check_frida_server()
         if frida_server_status:
             print('[+] Frida-server 启动成功')
@@ -184,4 +197,5 @@ class FriApk:
                 print('[+] 安装成功')
                 print('[INFO] 尝试脱壳...')
                 adb.package = self.apk.get_package()
-                entry(self.apk.get_package(), enable_spawn_mode=True, delay_second=5)
+                print("包名: ", adb.package)
+                entry(process=self.apk.get_package(), enable_spawn_mode=True, delay_second=5)
