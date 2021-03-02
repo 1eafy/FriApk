@@ -27,3 +27,6 @@ DEX_SAVE_PATH = normcase(join(BASE_PATH, "data")).replace("\\", sep)
 
 # 创建最多docker容器
 CONTAINER_MAX = 3
+
+# Web根目录
+WEB_ROOT_DIR = normcase(join(BASE_PATH, "friapkWeb")).replace("\\", sep)

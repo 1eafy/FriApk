@@ -29,7 +29,7 @@ def main():
     parser.add_argument("-e", help="New Android Emulator for docker on Linux")
     parser.add_argument("--static-only", help="rely only on static analysis", action="store_true", default=True)
     args = parser.parse_args()
-    apk = FriApk(args)
+    apk = FriApk(args.apk)
     # apk = FriApk(r"C:\Users\acer\Desktop\testApk\轻启动_2.15.0.apk")
     apk.load_apk()
 

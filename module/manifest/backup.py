@@ -11,7 +11,7 @@ class Module:
             "Name": "应用备份",
             "Author": "xxx",
             "Date": "2020.10.20",
-            "Description": "Check Application allow backup",
+            "Description": "Android API Level 8及其以上Android系统提供了为应用程序数据的备份和恢复功能，此功能的开关决定于该应用程序中AndroidManifest.xml文件中的allowBackup属性值[1] ，其属性值默认是true。当allowBackup标志为true时，用户即可通过adb backup和adb restore来进行对应用数据的备份和恢复，这可能会带来一定的安全风险。",
             "Reference": [
                 "https://segmentfault.com/a/1190000002590577",
             ],
@@ -58,14 +58,27 @@ class Module:
 
         allow_backup = self.apk.get_attribute_value("application", "allowBackup")
         # allow_debug = self.apk.get_attribute_value("application", "debuggable")
+        data = {
+            'backup':{
+                'title': self.module_info['Name'],
+                'allow_backup': [],
+                'res': True,
+                'suggestion': [],
 
+            }
+
+
+        }
         level = INFO
         content = f"\t{allow_backup}"
         poc = ""
+        poc1 = ""
         suggestion = ""
+        suggestion1 = ""
 
         if allow_backup and allow_backup.lower() == "true":
             level = HIGH
+            self.status = True
             suggestion = f"\t{RED}设置AndroidManifest.xml的allowBackup标志为false{END}"
             poc = f"""{RED}
                     BackupPOC:
@@ -74,13 +87,27 @@ class Module:
                     RecoveryPOC:
                         >>> adb restore back.ab{END}"""
 
+            poc1 ="""BackupPOC:
+    >>> adb backup -f back.ab -noapk {self.apk.get_package()}
+Install App on other Phone.
+RecoveryPOC:
+    >>> adb restore back.ab"""
+            suggestion1 = "设置AndroidManifest.xml的allowBackup标志为false"
+
+
+
+        data['backup']['level'] = level
+        data['backup']['suggestion'].append(suggestion1)
+        data['backup']['poc'] = poc1
+        data['backup']['res'] = self.status
+        self.status = True
         vuln = Vulnerable(name=self.module_info['Name'],
                           level=level,
                           content=content,
                           poc=poc,
                           suggestion=suggestion,
+                          data=data,
                           )
-        self.status = True
 
         return {
             "status": self.status,

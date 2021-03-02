@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FriApk</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../static/layui-v2.5.7/layui/css/layui.css" media="all">
+    <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+</head>
+<body>
+
+
+<div class="layui-progress layui-progress" lay-filter="demo" lay-showPercent="true">
+    <div class="layui-progress-bar" lay-percent="0%"></div>
+</div>
+
+<div class="layui-main" >
+    <div class="layui-container">
+        <form class="layui-form" action="" style="margin-left: 330px;margin-top: 300px">
+            <div class="layui-input-block layui-inline" >
+                <input type="text" name="uuid" required lay-verify="required" placeholder="输入UUID查询报告"
+                       autocomplete="off"
+                       class="layui-input">
+            </div>
+            <button type="button" class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">查询</button>
+        </form>
+<div class="layui-upload-drag" id="test10" style="margin-top: 5px;margin-left: 425px">
+        <p>点击上传，或将APK文件拖拽到此处</p>
+        <div class="layui-hide" id="uploadDemoView"></div>
+    </div>
+    </div>
+
+
+
+</div>
+
+
+<script src="../static/layui-v2.5.7/layui/layui.js" charset="utf-8"></script>
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+
+    layui.use('element', function () {
+        var element = layui.element;
+
+        layui.use('upload', function () {
+            var $ = layui.jquery
+                , upload = layui.upload;
+
+            //拖拽上传
+            upload.render({
+                elem: '#test10'
+                , url: 'http://127.0.0.1:5000/upload' //改成您自己的上传接口
+                , accept: 'file'
+                , exts: 'apk'
+                , progress: function (n, elem) {
+                    var percent = n + '%' //获取进度百分比
+                    element.progress('demo', percent); //可配合 layui 进度条元素使用
+
+                    //以下系 layui 2.5.6 新增
+                    console.log(percent); //得到当前触发的元素 DOM 对象。可通过该元素定义的属性值匹配到对应的进度条。
+                }
+                , done: function (res) {
+                    if (res.code === 1) {
+                        layer.msg('上传成功');
+                        layer.open({
+                            title: 'UUID'
+                            , content: res.uuid
+                            , yes: function (index, layero){
+                                layer.close(index);
+                            }
+                        });
+
+                        element.progress('demo', 0);
+                    }else{
+                        layer.msg(res.msg);
+                    }
+                    {#layui.$('#uploadDemoView').removeClass('layui-hide').find('img').attr('src', res.files.file);#}
+                    {#console.log(res)#}
+                }
+            });
+
+        });
+    });
+
+
+    layui.use('form', function () {
+        var form = layui.form;
+        var $ = layui.jquery
+        //监听提交
+        form.on('submit(formDemo)', function (data) {
+            var uuid = data.field.uuid;
+            var uuid_len = uuid.length;
+            if (uuid_len === 32) {
+                $.ajax({
+                    url: "http://127.0.0.1:5000/check",
+                    data: {'uuid': uuid},
+                    type: "get",
+                    dataType: "json",
+                    headers: {'Content-Type': 'application/json;charset=utf-8'},
+                    success: function (data) {
+                        if (data.code === 1) {
+                            layer.msg(data.msg);
+                            window.location.href = "http://127.0.0.1:5000/report/" + uuid;
+                        } else {
+                            layer.msg(data.msg)
+                        }
+                    },
+
+
+                })
+            } else {
+                layer.msg("MD5值不正确");
+            }
+            {#layer.msg(JSON.stringify(data.field));#}
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

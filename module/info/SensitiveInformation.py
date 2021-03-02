@@ -26,11 +26,26 @@ class Module:
         self.status = False
 
     def run(self):
-        regs = {
-            "Domain": b"(http://|https://)(.*)",
+        data = {
+
+            'sen_info':{
+                'title': self.module_info['Name'],
+                'type':{
+                    'Mail': [],
+                    'Domain': [],
+                    'Phone': [],
+                    'IP': [],
+                }
+
+            }
         }
+        # regs = {
+        #     "Domain": b"(http://|https://)(.*)",
+        # }
+        from common.reg import regs
         content = {
             "Domain": "",
+            'IP': ""
         }
         for dex in self.apk.get_all_dex():
             d = dvm.DalvikVMFormat(dex)
@@ -39,11 +54,17 @@ class Module:
                     a = re.search(reg , s, re.IGNORECASE)
                     if a:
                         content[name] = content[name] + "\n\t" + a.group().decode()
+                        data['sen_info']['type'][name].append(a.group().decode())
 
         self.status = len(content['Domain']) > 0
+        # print(data)
+        data['sen_info']['res'] = True
+        data['sen_info']['level'] = 0
+
         vuln = Vulnerable(name=self.module_info['Name'],
                           level=INFO,
-                          content=content["Domain"])
+                          content=content["Domain"],
+                          data=data)
         return {
             "status": True,
             'result': vuln,
