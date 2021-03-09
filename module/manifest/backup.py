@@ -5,8 +5,9 @@ from common.Vulnerability import *
 from common.PrintUtils import *
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "应用备份",
             "Author": "xxx",
@@ -64,6 +65,7 @@ class Module:
                 'allow_backup': [],
                 'res': True,
                 'suggestion': [],
+                'desc': self.module_info['Description'],
 
             }
 

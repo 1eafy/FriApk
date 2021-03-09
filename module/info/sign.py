@@ -19,8 +19,9 @@ v2：v2签名验证了归档中的所有字节，而不是单独的ZIP条目，�
 
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "Application Certificate Info",
             "Author": "xxx",

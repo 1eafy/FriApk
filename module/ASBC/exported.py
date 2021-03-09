@@ -12,8 +12,9 @@ NS = "{http://schemas.android.com/apk/res/android}"
 
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "Component Exported",
             "Author": "xxx",
@@ -134,16 +135,20 @@ class Module:
         c_uri = ""
         if len(exported_tag['provider']) > 0:
             for i, tag in enumerate(exported_tag['provider']):
-                for dex in self.apk.get_all_dex():
-                    d = dvm.DalvikVMFormat(dex)
-                    dx = Analysis(d)
-                    decompiler = DecompilerJADX(d, dx, jadx=JADX_PATH)
-                    d.set_decompiler(decompiler)
+                # for dex in self.apk.get_all_dex():
+                #     d = dvm.DalvikVMFormat(dex)
+                #     dx = Analysis(d)
+                #     decompiler = DecompilerJADX(d, dx, jadx=JADX_PATH)
+                #     d.set_decompiler(decompiler)
+                for d in self.decomplier:
                     # a = exported_tag['provider']
                     a = tag
                     a = a.replace('.', '/')
                     a = f"L{a};"
                     aaa = d.get_class(a)
+                    print(a)
+                    print('--------------------------------------------------------------------------')
+                    print(aaa)
                     if aaa:
                         src = aaa.get_source()
                         content_uri = re.search("""parse\("content://(.*)"\);""", src, re.IGNORECASE)
@@ -180,6 +185,7 @@ Provider POC:
         # data['component_exported']['poc'].append('>>> adb shell content [subcommand] [options]')
         # data['component_exported']['poc'].append('>>> adb shell content [query|insert|delete|read|secure|update|call|..] --uri ...')
         data['component_exported']['level'] = 1
+        print(data)
         vuln = Vulnerable(name=self.module_info['Name'],
                           level=MIDDLE,
                           content=content,

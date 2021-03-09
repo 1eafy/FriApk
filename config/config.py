@@ -19,14 +19,18 @@ ADB_PATH = normcase(join(BASE_PATH, "libs/adb.exe")).replace("\\", sep)
 FRIDA_SERVER_PATH = "/data/local/tmp/frida-server"
 # FRIDA_SERVER_PATH = "/data/local/tmp/frida-server-14.0.6-android-arm"
 
+FRIDA_SCRIPT_PATH = normcase(join(BASE_PATH, "common/frida_script")).replace("\\", sep)
+
 # Frida-server 在本地路径
 FRIDA_SERVER_LOCAL_PATH = normcase(join(BASE_PATH, "libs/frida-server")).replace("\\", sep)
 
+# Web根目录
+WEB_ROOT_DIR = normcase(join(BASE_PATH, "friapkWeb")).replace("\\", sep)
+
 # 脱壳DEX保存路径
-DEX_SAVE_PATH = normcase(join(BASE_PATH, "data")).replace("\\", sep)
+DEX_SAVE_PATH = normcase(join(BASE_PATH, WEB_ROOT_DIR, 'static', 'dexdump')).replace("\\", sep)
 
 # 创建最多docker容器
 CONTAINER_MAX = 3
 
-# Web根目录
-WEB_ROOT_DIR = normcase(join(BASE_PATH, "friapkWeb")).replace("\\", sep)
+

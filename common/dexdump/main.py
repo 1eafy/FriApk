@@ -107,7 +107,7 @@ def search(api):
     return matches
 
 
-def dump(pkg_name, api, mds=None):
+def dump(pkg_name, api, mds=None, uid=None):
     """
     """
     if mds is None:
@@ -123,7 +123,9 @@ def dump(pkg_name, api, mds=None):
             mds.append(md)
             # if not os.path.exists("./" + pkg_name + "/"):
             #     os.mkdir("./" + pkg_name + "/")
+            pkg_name = uid if uid else pkg_name
             dex_data_path = os.path.join(DEX_SAVE_PATH, pkg_name)
+
             if not os.path.exists(dex_data_path):
                 os.mkdir(dex_data_path)
             bs = dex_fix(bs)
@@ -193,7 +195,7 @@ def connect_device():
     return device
 
 
-def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enable_deep_search=False,):
+def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enable_deep_search=False, uid=None):
     # show_banner()
 
     # process = None
@@ -258,7 +260,8 @@ def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enab
     except Exception as e:
         click.secho("[Except] - Unable to inject into process: {} in \n{}".format(e, traceback.format_tb(
             sys.exc_info()[2])[-1]), bg='red')
-        exit()
+        # exit()
+        return False
 
     processes = get_all_process(device, pname)
     mds = []
@@ -278,14 +281,16 @@ def entry(process=None, pid=None, enable_spawn_mode=False, delay_second=10, enab
             if enable_deep_search:
                 script.exports.switchmode(True)
                 logging.info("[DEXDump]: deep search mode is enable, maybe wait long time.")
-            dump(pname, script.exports, mds=mds)
+            dump(pname, script.exports, mds=mds, uid=uid)
             script.unload()
             session.detach()
         except Exception as e:
             click.secho("[Except] - Unable dump dex: {} in \n{}".format(e, traceback.format_tb(
                 sys.exc_info()[2])[-1]), bg='red')
-            continue
-    exit()
+            # return False
+            # continue
+    # exit()
+    return True
 
 # if __name__ == "__main__":
 #     entry()

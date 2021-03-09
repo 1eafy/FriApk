@@ -25,188 +25,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="367eb053-4de8-4957-a59e-8646ce12621e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/friapk-web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/result/1/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/result/1/static/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/img/backgroud.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/20.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/21.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/23.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/28.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/30.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/31.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/32.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/40.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/42.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/47.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/51.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/57.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/58.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/60.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/64.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/68.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/8.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/images/face/9.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/colorpicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/rate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/transfer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/layui/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/免责声明.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/文档与示例/仓库/GitHub.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/文档与示例/仓库/Gitee 码云.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/文档与示例/文档.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/文档与示例/示例.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/static/layui-v2.5.7/更新日志.url" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/templates/1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/friapkWeb/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx-gui.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/jadx.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/bin/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-clst.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/android-29-res.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/animal-sniffer-annotations-1.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/annotations-18.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-2.7.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/antlr-runtime-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/apksig-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/asm-7.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/baksmali-2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/checker-qual-2.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-lang3-3.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/commons-text-1.8.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dexlib2-2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/dx-1.16.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/error_prone_annotations-2.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/failureaccess-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/gson-2.8.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/guava-28.1-jre.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/image-viewer-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/j2objc-annotations-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-cli-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-core-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jadx-gui-1.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jcommander-1.78.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jfontchooser-1.0.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/jsr305-3.0.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-classic-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/logback-core-1.2.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/reactive-streams-1.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rsyntaxtextarea-3.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava-2.2.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/rxjava2-swing-0.3.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/slf4j-api-1.7.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/smali-2.3.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/stringtemplate-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/jadx-1.1.0/lib/util-2.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/DynamicMonitor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/frida_script/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/friapkWeb/templates/report_template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/DynamicScan.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/base/FriApk_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/FriApk_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/Vulnerability.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/Vulnerability.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/dexdump/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/dexdump/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/reg.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/reg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/friapkWeb/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/friapkWeb/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/friapkWeb/templates/1.html" beforeDir="false" afterPath="$PROJECT_DIR$/friapkWeb/templates/1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/friapkWeb/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/friapkWeb/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/IntentSchemeURL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/ASBC/exported.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/exported.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/ASBC/providerDir.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/ASBC/providerDir.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/connector/ssl-connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/connector/ssl-connection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/db/sqlite-SQLCipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/db/sqlite-SQLCipher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/db/sqlite-see.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/db/sqlite-see.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/encryption/DES-WeakMode.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/encryption/DES-WeakMode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/info/SensitiveInformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/info/SensitiveInformation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/info/sign.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/info/sign.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/manifest/backup.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/manifest/backup.py" afterDir="false" />
@@ -214,6 +51,7 @@
       <change beforePath="$PROJECT_DIR$/module/manifest/intent-based.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/manifest/intent-based.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/manifest/permission.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/manifest/permission.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/tamper.html" beforeDir="false" />
     </list>
     <list id="9ac460fa-464d-48f3-adc3-b8c2af3129af" name="Complete the extraction of Signature and Certificate information." comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,6 +64,7 @@
       <list>
         <option value="HTML4 File" />
         <option value="Python Script" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -271,7 +110,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/friapkWeb/report" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/friapkWeb/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -283,20 +122,42 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Python\FriApk\friapkWeb\templates" />
+      <recent name="F:\Python\FriApk\friapkWeb\report" />
+      <recent name="F:\Python\FriApk" />
+      <recent name="F:\Python\FriApk\libs" />
+      <recent name="F:\Python\FriApk\data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Python\FriApk\common" />
       <recent name="F:\Python\FriApk\base" />
       <recent name="F:\Python\FriApk" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Python\FriApk\friapkWeb\report" />
-      <recent name="F:\Python\FriApk" />
-      <recent name="F:\Python\FriApk\libs" />
-      <recent name="F:\Python\FriApk\data" />
-      <recent name="F:\Python\FriApk\common" />
-    </key>
   </component>
   <component name="RunManager" selected="Flask server.Flask (F:\Python\FriApk\friapkWeb\app.py)">
+    <configuration name="DynamicMonitor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="FriApk" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/base" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/DynamicMonitor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FriApk" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -428,9 +289,11 @@
       <item itemvalue="Python.fridaDump_test" />
       <item itemvalue="Python.app" />
       <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.DynamicMonitor" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DynamicMonitor" />
         <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.app" />
         <item itemvalue="Python.main" />
@@ -512,7 +375,9 @@
       <workItem from="1614492058545" duration="20000" />
       <workItem from="1614492101622" duration="1035000" />
       <workItem from="1614564466387" duration="14204000" />
-      <workItem from="1614647560949" duration="48246000" />
+      <workItem from="1614647560949" duration="48847000" />
+      <workItem from="1614733785720" duration="25974000" />
+      <workItem from="1615115483610" duration="2423000" />
     </task>
     <task id="LOCAL-00001" summary="Complete the extraction of Signature and Certificate information.">
       <created>1603108752589</created>
@@ -668,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614613324701</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="- add Web Server base Flask.&#10;- add Web-ui base Layui&#10;- add json type data for web.&#10;- fix bugs.">
+      <created>1614705862560</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614705862560</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +579,8 @@
     <MESSAGE value="init." />
     <MESSAGE value="Create some vulnerability detection modules." />
     <MESSAGE value="- fix start frida-server.&#10;- fix frida-dexdump." />
-    <option name="LAST_COMMIT_MESSAGE" value="- fix start frida-server.&#10;- fix frida-dexdump." />
+    <MESSAGE value="- add Web Server base Flask.&#10;- add Web-ui base Layui&#10;- add json type data for web.&#10;- fix bugs." />
+    <option name="LAST_COMMIT_MESSAGE" value="- add Web Server base Flask.&#10;- add Web-ui base Layui&#10;- add json type data for web.&#10;- fix bugs." />
   </component>
   <component name="WindowStateProjectService">
     <state x="230" y="91" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614676779207">
@@ -718,54 +591,54 @@
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="445" y="237" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1549.871@0.0.1549.871" timestamp="1614665817346" />
-    <state x="154" y="1" width="959" height="864" key="CommitChangelistDialog2" timestamp="1614613321332">
+    <state x="154" y="1" width="959" height="864" key="CommitChangelistDialog2" timestamp="1614705857849">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="154" y="1" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1614613321332" />
+    <state x="154" y="1" width="959" height="864" key="CommitChangelistDialog2/0.0.1549.871@0.0.1549.871" timestamp="1614705857849" />
     <state x="555" y="177" key="FileChooserDialogImpl" timestamp="1613830334851">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="555" y="177" key="FileChooserDialogImpl/0.0.1549.871@0.0.1549.871" timestamp="1613830334851" />
-    <state width="1506" height="223" key="GridCell.Tab.0.bottom" timestamp="1614702083023">
+    <state width="1506" height="374" key="GridCell.Tab.0.bottom" timestamp="1615127209777">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="223" key="GridCell.Tab.0.bottom/0.0.1549.871@0.0.1549.871" timestamp="1614702083023" />
-    <state width="1506" height="223" key="GridCell.Tab.0.center" timestamp="1614702083023">
+    <state width="1506" height="374" key="GridCell.Tab.0.bottom/0.0.1549.871@0.0.1549.871" timestamp="1615127209777" />
+    <state width="1506" height="374" key="GridCell.Tab.0.center" timestamp="1615127209777">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="223" key="GridCell.Tab.0.center/0.0.1549.871@0.0.1549.871" timestamp="1614702083023" />
-    <state width="1506" height="223" key="GridCell.Tab.0.left" timestamp="1614702083023">
+    <state width="1506" height="374" key="GridCell.Tab.0.center/0.0.1549.871@0.0.1549.871" timestamp="1615127209777" />
+    <state width="1506" height="374" key="GridCell.Tab.0.left" timestamp="1615127209777">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="223" key="GridCell.Tab.0.left/0.0.1549.871@0.0.1549.871" timestamp="1614702083023" />
-    <state width="1506" height="223" key="GridCell.Tab.0.right" timestamp="1614702083023">
+    <state width="1506" height="374" key="GridCell.Tab.0.left/0.0.1549.871@0.0.1549.871" timestamp="1615127209777" />
+    <state width="1506" height="374" key="GridCell.Tab.0.right" timestamp="1615127209777">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="223" key="GridCell.Tab.0.right/0.0.1549.871@0.0.1549.871" timestamp="1614702083023" />
-    <state width="1506" height="501" key="GridCell.Tab.1.bottom" timestamp="1614676898055">
+    <state width="1506" height="374" key="GridCell.Tab.0.right/0.0.1549.871@0.0.1549.871" timestamp="1615127209777" />
+    <state width="1506" height="282" key="GridCell.Tab.1.bottom" timestamp="1614782897570">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="501" key="GridCell.Tab.1.bottom/0.0.1549.871@0.0.1549.871" timestamp="1614676898055" />
-    <state width="1506" height="501" key="GridCell.Tab.1.center" timestamp="1614676898055">
+    <state width="1506" height="282" key="GridCell.Tab.1.bottom/0.0.1549.871@0.0.1549.871" timestamp="1614782897570" />
+    <state width="1506" height="282" key="GridCell.Tab.1.center" timestamp="1614782897570">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="501" key="GridCell.Tab.1.center/0.0.1549.871@0.0.1549.871" timestamp="1614676898055" />
-    <state width="1506" height="501" key="GridCell.Tab.1.left" timestamp="1614676898055">
+    <state width="1506" height="282" key="GridCell.Tab.1.center/0.0.1549.871@0.0.1549.871" timestamp="1614782897570" />
+    <state width="1506" height="282" key="GridCell.Tab.1.left" timestamp="1614782897570">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="501" key="GridCell.Tab.1.left/0.0.1549.871@0.0.1549.871" timestamp="1614676898055" />
-    <state width="1506" height="501" key="GridCell.Tab.1.right" timestamp="1614676898055">
+    <state width="1506" height="282" key="GridCell.Tab.1.left/0.0.1549.871@0.0.1549.871" timestamp="1614782897570" />
+    <state width="1506" height="282" key="GridCell.Tab.1.right" timestamp="1614782897570">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state width="1506" height="501" key="GridCell.Tab.1.right/0.0.1549.871@0.0.1549.871" timestamp="1614676898055" />
+    <state width="1506" height="282" key="GridCell.Tab.1.right/0.0.1549.871@0.0.1549.871" timestamp="1614782897570" />
     <state x="284" y="119" width="981" height="707" key="SettingsEditor" timestamp="1614680964397">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
     <state x="284" y="119" width="981" height="707" key="SettingsEditor/0.0.1549.871@0.0.1549.871" timestamp="1614680964397" />
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1614613324728">
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2" timestamp="1614705865464">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
-    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1614613324728" />
+    <state x="367" y="169" key="Vcs.Push.Dialog.v2/0.0.1549.871@0.0.1549.871" timestamp="1614705865464" />
     <state x="590" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614675666108">
       <screen x="0" y="0" width="1549" height="871" />
     </state>
@@ -775,36 +648,31 @@
     </state>
     <state x="437" y="183" width="672" height="678" key="search.everywhere.popup/0.0.1549.871@0.0.1549.871" timestamp="1614694708278" />
   </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Python.FlaskServer">
-        <watch expression="env" language="Python" />
-      </configuration>
-    </watches-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FriApk$FriApk_v2.coverage" NAME="FriApk_v2 Coverage Results" MODIFIED="1603938448561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$4.coverage" NAME="4 Coverage Results" MODIFIED="1602769805002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$StaticScan.coverage" NAME="StaticScan Coverage Results" MODIFIED="1602749754839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$FriApk.coverage" NAME="FriApk Coverage Results" MODIFIED="1602064831579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$sfsdf.coverage" NAME="sfsdf Coverage Results" MODIFIED="1602769941072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$config.coverage" NAME="config Coverage Results" MODIFIED="1603938875917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
-    <SUITE FILE_PATH="coverage/FriApk$ff.coverage" NAME="ff Coverage Results" MODIFIED="1602769792362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$3.coverage" NAME="3 Coverage Results" MODIFIED="1602750186795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$Flask__F__Python_FriApk_friapkWeb_app_py_.coverage" NAME="Flask (F:\Python\FriApk\friapkWeb\app.py) Coverage Results" MODIFIED="1615116394087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FriApk$main.coverage" NAME="main Coverage Results" MODIFIED="1603075170716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FriApk$2.coverage" NAME="2 Coverage Results" MODIFIED="1602750219388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$DumpDEX.coverage" NAME="DumpDEX Coverage Results" MODIFIED="1603940530738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1603010239392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$asd.coverage" NAME="asd Coverage Results" MODIFIED="1602758597590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
     <SUITE FILE_PATH="coverage/FriApk$docker_avd.coverage" NAME="docker-avd Coverage Results" MODIFIED="1604372085840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/FriApk$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1614676539403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jinja2_demo" />
-    <SUITE FILE_PATH="coverage/FriApk$Flask__F__Python_FriApk_friapk_web_app_py_.coverage" NAME="Flask (F:\Python\FriApk\friapkWeb\app.py) Coverage Results" MODIFIED="1614702083016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FriApk$app.coverage" NAME="app Coverage Results" MODIFIED="1614676147997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/friapk-web" />
     <SUITE FILE_PATH="coverage/FriApk$IntentSchemeURL.coverage" NAME="IntentSchemeURL Coverage Results" MODIFIED="1603362374018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/module/ASBC" />
-    <SUITE FILE_PATH="coverage/FriApk$adb.coverage" NAME="adb Coverage Results" MODIFIED="1603937459327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
     <SUITE FILE_PATH="coverage/FriApk$fridaDump_test.coverage" NAME="fridaDump_test Coverage Results" MODIFIED="1604543017730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/FriApk$util.coverage" NAME="util Coverage Results" MODIFIED="1602989914322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/libs/androguard" />
     <SUITE FILE_PATH="coverage/FriApk$sdfa.coverage" NAME="sdfa Coverage Results" MODIFIED="1602759098450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
-    <SUITE FILE_PATH="coverage/FriApk$test.coverage" NAME="test Coverage Results" MODIFIED="1614694361738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FriApk$test.coverage" NAME="test Coverage Results" MODIFIED="1614738977001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FriApk$FriApk_v2.coverage" NAME="FriApk_v2 Coverage Results" MODIFIED="1603938448561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$config.coverage" NAME="config Coverage Results" MODIFIED="1603938875917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+    <SUITE FILE_PATH="coverage/FriApk$ff.coverage" NAME="ff Coverage Results" MODIFIED="1602769792362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$3.coverage" NAME="3 Coverage Results" MODIFIED="1602750186795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$DumpDEX.coverage" NAME="DumpDEX Coverage Results" MODIFIED="1603940530738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$tmp.coverage" NAME="tmp Coverage Results" MODIFIED="1603010239392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$asd.coverage" NAME="asd Coverage Results" MODIFIED="1602758597590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$DynamicMonitor.coverage" NAME="DynamicMonitor Coverage Results" MODIFIED="1614753783261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/base" />
+    <SUITE FILE_PATH="coverage/FriApk$Flask__F__Python_FriApk_friapk_web_app_py_.coverage" NAME="Flask (F:\Python\FriApk\friapkWeb\app.py) Coverage Results" MODIFIED="1614702083016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FriApk$app.coverage" NAME="app Coverage Results" MODIFIED="1614676147997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/friapk-web" />
+    <SUITE FILE_PATH="coverage/FriApk$adb.coverage" NAME="adb Coverage Results" MODIFIED="1603937459327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
   </component>
 </project>

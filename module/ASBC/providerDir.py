@@ -1,6 +1,7 @@
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "",
             "Author": "xxx",

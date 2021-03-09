@@ -6,8 +6,9 @@ from androguard.decompiler.decompiler import DecompilerJADX
 from config.config import JADX_PATH
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "Intent Scheme URL漏洞攻击检测",
             "Author": "xxx",

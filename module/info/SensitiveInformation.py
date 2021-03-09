@@ -11,8 +11,9 @@ from config.config import JADX_PATH
 
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "敏感信息匹配",
             "Author": "xxx",
@@ -45,11 +46,18 @@ class Module:
         from common.reg import regs
         content = {
             "Domain": "",
-            'IP': ""
+            'IP': "",
+            'Mail': ""
         }
-        for dex in self.apk.get_all_dex():
-            d = dvm.DalvikVMFormat(dex)
-            for s in d.get_strings():
+        # for dex in self.apk.get_all_dex():
+        #     d = dvm.DalvikVMFormat(dex)
+        for d in self.decomplier:
+            try:
+                strings_list = d.get_strings()
+            except Exception as e:
+                print(e)
+                continue
+            for s in strings_list:
                 for name, reg in regs.items():
                     a = re.search(reg , s, re.IGNORECASE)
                     if a:

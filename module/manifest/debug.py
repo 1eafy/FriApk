@@ -2,8 +2,9 @@ from common.PrintUtils import *
 from common.Vulnerability import *
 
 class Module:
-    def __init__(self, apk):
+    def __init__(self, apk, decomplier):
         self.apk = apk
+        self.decomplier = decomplier
         self.module_info = {
             "Name": "Debuggable",
             "Author": "xxx",
@@ -25,24 +26,26 @@ class Module:
             'allow_debug': {
                 'title': self.module_info['Name'],
                 'res': True,
+                'desc': self.module_info['Description'],
+                'suggestion': [],
             },
 
 
         }
         level = INFO
         content = f"\t{allow_debug}"
-        poc = None
+        poc = ""
         suggestion = None
 
         if allow_debug and allow_debug.lower() == "true":
             level = HIGH
             self.status = True
-            poc = None
+            poc = ""
             suggestion = f"\t{RED}设置AndroidManifest.xml的debuggable标志为false{END}"
 
 
         data['allow_debug']['level'] = level
-        data['allow_debug']['suggestion'] = suggestion
+        data['allow_debug']['suggestion'].append('设置AndroidManifest.xml的debuggable标志为false')
         data['allow_debug']['poc'] = poc
         data['allow_debug']['res'] = self.status
         self.status = True
