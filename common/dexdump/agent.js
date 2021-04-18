@@ -24,6 +24,7 @@ function verify_by_maps(dexptr, mapsptr) {
 
 
 function get_dex_real_size(dexptr, range_base, range_end) {
+    // 通过DEX文件格式读取filesize字段值获取真实文件大小
     var dex_size = dexptr.add(0x20).readUInt();
 
     var maps_address = get_maps_address(dexptr, range_base, range_end);
@@ -107,6 +108,7 @@ function verify(dexptr, range, enable_verify_maps) {
 
 rpc.exports = {
     memorydump: function memorydump(address, size) {
+        // 读取内存，传进两个参数，起始地址和大小
         return new NativePointer(address).readByteArray(size);
     },
     switchmode: function switchmode(bool) {
@@ -114,8 +116,10 @@ rpc.exports = {
     },
     scandex: function scandex() {
         var result = [];
+        // 内存中搜索所有可读的内存块，返回一个内存对象列表：包含base、size等属性
         Process.enumerateRanges('r--').forEach(function (range) {
             try {
+                // 同步搜索，内存基地址、内存大小，匹配模式，返回匹配成功的对象
                 Memory.scanSync(range.base, range.size, "64 65 78 0a 30 ?? ?? 00").forEach(function (match) {
 
                     if (range.file && range.file.path
@@ -127,6 +131,7 @@ rpc.exports = {
 
                     if (verify(match.address, range, false)) {
                         var dex_size = get_dex_real_size(match.address, range.base, range.base.add(range.size));
+                        // 将结果push到result
                         result.push({
                             "addr": match.address,
                             "size": dex_size
@@ -134,6 +139,7 @@ rpc.exports = {
 
                         var max_size = range.size - match.address.sub(range.base);
                         if (enable_deep_search && max_size != dex_size) {
+                            // 将结果push到result
                             result.push({
                                 "addr": match.address,
                                 "size": max_size
@@ -143,11 +149,13 @@ rpc.exports = {
                 });
 
                 if (enable_deep_search) {
+                    // 深度搜索，通过匹配DEX文件中的string_ids_off固定值`70 00 00 00`
                     Memory.scanSync(range.base, range.size, "70 00 00 00").forEach(function (match) {
                         var dex_base = match.address.sub(0x3C);
                         if (dex_base < range.base) {
                             return
                         }
+                        // 判断是否以`dex\n`开头并进行文件校验
                         if (dex_base.readCString(4) != "dex\n" && verify(dex_base, range, true)) {
                             var real_dex_size = get_dex_real_size(dex_base, range.base, range.base.add(range.size));
                             result.push({

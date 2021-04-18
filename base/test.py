@@ -1,8 +1,14 @@
 import ctypes,sys
-
+from boofuzz import *
 STD_INPUT_HANDLE = -10
 STD_OUTPUT_HANDLE = -11
 STD_ERROR_HANDLE = -12
+
+session = Session(target=Target(connection=UDPSocketConnection()))
+session.connect(s_get())
+
+
+
 
 # 字体颜色定义 ,关键在于颜色编码，由2位十六进制组成，分别取0~f，前一位指的是背景色，后一位指的是字体色
 #由于该函数的限制，应该是只有这16种，可以前景色与背景色组合。也可以几种颜色通过或运算组合，组合后还是在这16种颜色中
